@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
+    padding: 0;
+    margin: 0;
     background-color: ${theme.colors.secundaryColor};
-    min-height: 100vh;
-    width: 100%;
+    height: 100vh;
+    padding: 20px;
   `}
 `;
 

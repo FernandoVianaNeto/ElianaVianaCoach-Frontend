@@ -1,17 +1,23 @@
 import React from 'react';
 import P from 'prop-types';
-import { Container, LogoContainer, ChildrenContainer } from './styles';
+import { AiFillInstagram } from 'react-icons/ai';
+import {
+  Container, LogoContainer, ChildrenContainer, ButtonsContainer,
+} from './styles';
 
 export function Menu({ children }) {
   return (
     <Container>
+      <ChildrenContainer>
+        {children}
+      </ChildrenContainer>
       <LogoContainer>
         <h3>ElianaViana Coach</h3>
         <small>Coach e Psicanalista</small>
       </LogoContainer>
-      <ChildrenContainer>
-        {children}
-      </ChildrenContainer>
+      <ButtonsContainer>
+        <AiFillInstagram />
+      </ButtonsContainer>
     </Container>
   );
 }
