@@ -9,6 +9,7 @@ export const theme = {
   font: {
     family: {
       primaryFont: "'Dosis', sans-serif",
+      logoFont: "'The Nautigal', cursive",
     },
   },
 };
