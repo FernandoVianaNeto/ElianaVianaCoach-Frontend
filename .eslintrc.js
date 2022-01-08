@@ -18,5 +18,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'linebreak-style': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
