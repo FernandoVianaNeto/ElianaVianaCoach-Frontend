@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 4px 16px;
+    padding: 8px 16px;
     background-color: ${theme.colors.fifthColor};
   `}  
 `;
@@ -15,7 +15,6 @@ export const LogoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 16px 32px;
     background-color: ${theme.colors.fifthColor};
 
     h3 {
@@ -43,13 +42,19 @@ export const ChildrenContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 16px 32px;
     background-color: ${theme.colors.fifthColor};
   `}  
 `;
 
 export const ButtonsContainer = styled.div`
-  ${() => css`
-
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: ${theme.colors.primaryColor};
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   `}  
 `;

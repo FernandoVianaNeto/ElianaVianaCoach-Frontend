@@ -1,12 +1,19 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     padding: 0;
     margin: 0;
-    background-color: ${theme.colors.secundaryColor};
+
     height: 100vh;
-    padding: 20px;
+    z-index: 0;
+    
+    img {
+      z-index: -1;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+    }
   `}
 `;
 
@@ -14,18 +21,16 @@ export const Container = styled.div`
 
 export const FirstView = styled.main`
   ${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    padding: 20px;
     .column-left {
-      flex: 1;
       display: flex; 
       flex-direction: column;
+      align-items: center;
       justify-content: space-around;
       height: 300px;
       margin: 30px 70px;
       padding: 50px;
+      width: 300px;
 
       .call-text {
         max-width: 300px;
@@ -44,18 +49,7 @@ export const FirstView = styled.main`
 
       .button-container {
         display: flex;
-      }
-    }
-
-    .column-right {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: blue;
-
-      img {
-        margin-right: 50px;
+        align-items: center;
       }
     }
   `}

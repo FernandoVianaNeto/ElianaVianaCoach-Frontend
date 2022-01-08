@@ -3,22 +3,18 @@ import { RiFootprintFill } from 'react-icons/ri';
 import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import { Container, FirstView } from './styles';
-import { ButtonLink } from '../../components/ButtonLink';
 import { ButtonCall } from '../../components/ButtonCall';
-import Foto from '../../assets/Logo.jpeg';
 
 export function Home() {
   return (
     <Container>
-      <Menu>
-        <MenuLink local="Home" link="/" />
-        <MenuLink local="Sobre mim" link="/" />
-        <MenuLink local="Especialidades" link="/" />
-        <ButtonLink>
-          Agendar sessão
-        </ButtonLink>
-      </Menu>
+      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1623179162/small_pexels_photo_3171837_bbf66f242c.jpg" alt="first view background" />
       <FirstView>
+        <Menu>
+          <MenuLink local="HOME" link="/" />
+          <MenuLink local="SOBRE MIM" link="/" />
+          <MenuLink local="ESPECIALIDADES" link="/" />
+        </Menu>
         <div className="column-left">
           <div className="call-text">
             <h1>
@@ -38,9 +34,6 @@ export function Home() {
               <RiFootprintFill />
             </ButtonCall>
           </div>
-        </div>
-        <div className="column-right">
-          <img src={Foto} alt="logo foto" />
         </div>
       </FirstView>
     </Container>

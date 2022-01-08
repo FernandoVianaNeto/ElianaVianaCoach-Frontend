@@ -1,9 +1,12 @@
 import React from 'react';
 import P from 'prop-types';
-import { AiFillInstagram } from 'react-icons/ai';
+import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
+
 import {
   Container, LogoContainer, ChildrenContainer, ButtonsContainer,
 } from './styles';
+import { MenuLink } from '../MenuLink';
+import { ButtonLink } from '../ButtonLink';
 
 export function Menu({ children }) {
   return (
@@ -13,10 +16,16 @@ export function Menu({ children }) {
       </ChildrenContainer>
       <LogoContainer>
         <h3>ElianaViana Coach</h3>
-        <small>Coach e Psicanalista</small>
       </LogoContainer>
       <ButtonsContainer>
-        <AiFillInstagram />
+        <ButtonLink>
+          Agendar sessão
+        </ButtonLink>
+        <MenuLink link="/" local="BLOG" />
+        <div>
+          <AiFillInstagram size="16px" />
+          <AiFillFacebook />
+        </div>
       </ButtonsContainer>
     </Container>
   );
