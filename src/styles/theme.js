@@ -6,4 +6,9 @@ export const theme = {
     fourthColor: '#F06449',
     fifthColor: '#36382E',
   },
+  font: {
+    family: {
+      primaryFont: "'Dosis', sans-serif",
+    },
+  },
 };

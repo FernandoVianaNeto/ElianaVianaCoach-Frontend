@@ -2,14 +2,14 @@ import React from 'react';
 import P from 'prop-types';
 import { Container } from './styles';
 
-export function Menu({ children }) {
+export function MenuLink({ link }) {
   return (
     <Container>
-      {children}
+      <p>{link}</p>
     </Container>
   );
 }
 
-Menu.propTypes = {
-  children: P.node.isRequired,
+MenuLink.propTypes = {
+  link: P.string.isRequired,
 };
