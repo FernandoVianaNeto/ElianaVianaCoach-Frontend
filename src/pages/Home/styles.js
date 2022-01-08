@@ -22,7 +22,7 @@ export const FirstView = styled.main`
       flex-direction: column;
       justify-content: space-around;
       height: 300px;
-      margin: 30px;
+      margin: 30px 70px;
       padding: 50px;
 
       .call-text {
@@ -39,10 +39,22 @@ export const FirstView = styled.main`
           padding: 4px 8px;
         }
       }
+
+      .button-container {
+        display: flex;
+      }
     }
 
     .column-right {
       flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: blue;
+
+      img {
+        margin-right: 50px;
+      }
     }
   `}
 `;

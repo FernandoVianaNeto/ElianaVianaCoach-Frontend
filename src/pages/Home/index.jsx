@@ -1,9 +1,11 @@
 import React from 'react';
+import { RiFootprintFill } from 'react-icons/ri';
 import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import { Container, FirstView } from './styles';
 import { ButtonLink } from '../../components/ButtonLink';
 import { ButtonCall } from '../../components/ButtonCall';
+import Foto from '../../assets/Logo.jpeg';
 
 export function Home() {
   return (
@@ -30,11 +32,15 @@ export function Home() {
             </h1>
           </div>
           <div className="button-container">
-            <ButtonCall type="button">Conheça mais</ButtonCall>
+            <ButtonCall type="button">
+              Dê o primeiro passo
+              {' '}
+              <RiFootprintFill />
+            </ButtonCall>
           </div>
         </div>
         <div className="column-right">
-          <p>img</p>
+          <img src={Foto} alt="logo foto" />
         </div>
       </FirstView>
     </Container>

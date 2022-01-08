@@ -6,7 +6,7 @@ export function Menu({ children }) {
   return (
     <Container>
       <LogoContainer>
-        <h3>Eliana Viana Coach</h3>
+        <h3>ElianaViana Coach</h3>
         <small>Coach e Psicanalista</small>
       </LogoContainer>
       <ChildrenContainer>

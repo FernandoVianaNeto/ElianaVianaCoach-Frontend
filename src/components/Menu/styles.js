@@ -27,6 +27,9 @@ export const LogoContainer = styled.div`
     }
     
     small {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 0;
       margin: 0;
       font-family: ${theme.font.family.primaryFont};
