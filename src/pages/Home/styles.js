@@ -12,10 +12,15 @@ export const Container = styled.div`
 
 export const FirstView = styled.main`
   ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .column-left {
+      flex: 1;
       display: flex; 
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       height: 300px;
       margin: 30px;
       padding: 50px;
@@ -28,10 +33,16 @@ export const FirstView = styled.main`
           align-items: center;
           justify-content: center;
           margin-top: 10px; 
-          background-color: ${theme.colors.thirdColor};
+          background-color: ${theme.colors.fourthColor};
           font-family: ${theme.font.family.primaryFont};
+          color: ${theme.colors.fifthColor};
+          padding: 4px 8px;
         }
       }
+    }
+
+    .column-right {
+      flex: 1;
     }
   `}
 `;

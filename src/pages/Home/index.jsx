@@ -3,6 +3,7 @@ import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import { Container, FirstView } from './styles';
 import { ButtonLink } from '../../components/ButtonLink';
+import { ButtonCall } from '../../components/ButtonCall';
 
 export function Home() {
   return (
@@ -28,6 +29,12 @@ export function Home() {
               o rumo da sua vida
             </h1>
           </div>
+          <div className="button-container">
+            <ButtonCall type="button">Conheça mais</ButtonCall>
+          </div>
+        </div>
+        <div className="column-right">
+          <p>img</p>
         </div>
       </FirstView>
     </Container>
