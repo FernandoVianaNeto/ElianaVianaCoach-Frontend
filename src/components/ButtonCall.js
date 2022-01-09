@@ -9,13 +9,14 @@ export const ButtonCall = styled.button`
 
     font-family: ${theme.font.family.primaryFont};
     font-size: 18px;
+    font-weight: bold;
     color: ${theme.colors.primaryColor};
-    background-color: ${theme.colors.fifthColor};
+    background-color: ${theme.colors.fourthColor};
     padding: 15px 30px;
 
     cursor: pointer;
 
-    border: 1px solid ${theme.colors.fifthColor};
+    border: 1px solid ${theme.colors.fourthColor};
 
   `}
 `;

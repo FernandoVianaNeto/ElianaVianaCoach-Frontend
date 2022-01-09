@@ -23,7 +23,7 @@ export function Menu({ children }) {
         </ButtonLink>
         <MenuLink link="/" local="BLOG" />
         <div>
-          <AiFillInstagram size="16px" />
+          <AiFillInstagram size="16" />
           <AiFillFacebook />
         </div>
       </ButtonsContainer>

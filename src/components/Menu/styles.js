@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: space-around;
     padding: 8px 16px;
     background-color: ${theme.colors.fifthColor};
+    border-radius: 4px;
   `}  
 `;
 
@@ -49,6 +50,7 @@ export const ChildrenContainer = styled.div`
 export const ButtonsContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: flex-start;
     color: ${theme.colors.primaryColor};

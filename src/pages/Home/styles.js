@@ -21,37 +21,49 @@ export const Container = styled.div`
 
 export const FirstView = styled.main`
   ${({ theme }) => css`
-    padding: 20px;
+    padding: 20px 100px;
+
     .column-left {
       display: flex; 
       flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
+      align-items: flex-end;
+      justify-content: center;
       height: 300px;
       margin: 30px 70px;
       padding: 50px;
-      width: 300px;
 
       .call-text {
-        max-width: 300px;
+        max-width: 500px;
+        margin: 50px;
 
         h1 {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
           margin-top: 10px; 
-          background-color: ${theme.colors.fourthColor};
-          font-family: ${theme.font.family.primaryFont};
-          color: ${theme.colors.fifthColor};
+          font-family: 'Mukta';
+          /* font-family: ${theme.font.family.primaryFont}; */
+          color: ${theme.colors.primaryColor};
           padding: 4px 8px;
         }
       }
 
       .button-container {
+        margin: 0px 50px;
         display: flex;
         align-items: center;
       }
     }
+  `}
+`;
+
+export const AboutMe = styled.div`
+  ${({ theme }) => css`
+    min-height: 100vh;
+    padding: 40px 100px;
+    font-family: 'Licorice';
+    font-size: 24px;
+    color: ${theme.colors.fourthColor};
   `}
 `;
 
