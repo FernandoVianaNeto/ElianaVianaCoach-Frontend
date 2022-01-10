@@ -1,13 +1,15 @@
 import React from 'react';
 import { RiFootprintFill } from 'react-icons/ri';
+import { GrLinkNext } from 'react-icons/gr';
 import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import {
   Container, FirstView, AboutMe, ThreeGridTemplate, MenuContainer, EspecialidadesMenu,
-  EspecialidadesGrid,
+  EspecialidadesGrid, Testimonys, TestimonyGrid,
 } from './styles';
 import { ButtonCall } from '../../components/ButtonCall';
 import { WorkCard } from '../../components/WorkCard';
+import { TestimonyCard } from '../../components/TestimonyCard';
 
 export function Home() {
   return (
@@ -80,7 +82,7 @@ export function Home() {
         </ThreeGridTemplate>
       </AboutMe>
       <EspecialidadesMenu>
-        <h1 className="title">Como é o meu trabalho</h1>
+        <h1 className="title">Como é o meu trabalho?</h1>
         <EspecialidadesGrid>
           <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Work">
             <p>
@@ -115,6 +117,35 @@ export function Home() {
         </EspecialidadesGrid>
         <div className="footer"><ButtonCall>SAIBA MAIS</ButtonCall></div>
       </EspecialidadesMenu>
+      <Testimonys>
+        <TestimonyGrid>
+          <div className="left-column">
+            <h1 className="title">O que meus clientes falam de mim?</h1>
+            <TestimonyCard name="Fernando">
+              <p>
+                Sylvie helped me see that I was heading for burnout at a
+                breakneck pace. I needed to slow down and start taking better
+                care of myself, because my business was paying the consequences.
+                I couldnt focus, I had no clue what direction I was going,
+                and I hated sitting down to work. With Sylvies guidance,
+                I was able to create a health and wellness routine that
+                includes me, me, and more me. I make the right food choices,
+                get enough sleep, and move my body everyday. As a result,
+                my business has never been better.
+                I work hard and love every minute of it, instead of dreading work days.
+              </p>
+            </TestimonyCard>
+            <div className="button-container">
+              <button type="button">
+                Ver mais
+                {' '}
+                <GrLinkNext />
+              </button>
+            </div>
+          </div>
+          <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="coach" />
+        </TestimonyGrid>
+      </Testimonys>
     </Container>
   );
 }

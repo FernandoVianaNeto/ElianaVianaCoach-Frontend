@@ -11,7 +11,7 @@ export function WorkCard({
         <img src={imglink} alt={imgalt} />
       </div>
       <div className="description">
-        <p>{title}</p>
+        <p className="description-title">{title}</p>
         {children}
       </div>
     </Container>

@@ -20,5 +20,10 @@ export const Container = styled.div`
       max-width: 400px;
       margin: 30px 0px;
     }
+
+    .description-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
   `}
 `;

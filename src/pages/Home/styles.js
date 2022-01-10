@@ -105,6 +105,20 @@ export const EspecialidadesMenu = styled.div`
   `}
 `;
 
+export const Testimonys = styled.div`
+  ${({ theme }) => css`
+    height: 60vh;
+
+    .title {
+      margin-top: 20px;
+      font-family: ${theme.font.family.titleFont};
+      font-size: 60px;
+      color: ${theme.colors.fourthColor};
+      transform: rotate(-3deg);
+    }
+  `}
+`;
+
 // Style dos elementos utilizados
 
 export const ThreeGridTemplate = styled.div`
@@ -196,5 +210,40 @@ export const EspecialidadesGrid = styled.div`
     margin: 100px 40px;
     padding: 100px 40px;
     height: 100%;
+  `}
+`;
+
+export const TestimonyGrid = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 60vh;
+      opacity: 0.7;
+    }
+
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 100px;
+
+      .button-container {
+        width: 100%;
+        text-align: right;
+        margin-right: 50px;
+
+        button {
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          font-family: ${theme.font.family.primaryFont};
+          font-size: 18px;
+          color: ${theme.colors.fifthColor};
+        }
+      }
+    }
   `}
 `;
