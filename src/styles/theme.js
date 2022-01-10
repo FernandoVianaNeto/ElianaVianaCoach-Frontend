@@ -8,9 +8,11 @@ export const theme = {
   },
   font: {
     family: {
-      primaryFont: "'Dosis', sans-serif",
+      primaryFont: "'Oswald', sans-serif",
+      // primaryFont: "'Dosis', sans-serif",
       logoFont: "'The Nautigal', cursive",
       titleFont: "'Licorice', cursive",
+      subtitleFont: "'Open Sans Condensed', sans-serif",
     },
   },
 };

@@ -1,19 +1,12 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     padding: 0;
     margin: 0;
 
-    height: 100vh;
     z-index: 0;
-    
-    img {
-      z-index: -1;
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-    }
+    background-color: ${theme.colors.secundaryColor};
   `}
 `;
 
@@ -67,12 +60,26 @@ export const FirstView = styled.main`
 export const AboutMe = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
-    padding: 40px 100px;
     font-size: 24px;
-    
+
+    .subpage-introduction {
+      padding: 10px 30px;
+      background-color: ${theme.colors.fifthColor};
+    }
+
+    .title {
+      font-size: 60px;
+      color: ${theme.colors.fourthColor};
+      font-family: ${theme.font.family.titleFont};
+    }
+
+    small {
+      font-family: ${theme.font.family.primaryFont};
+      color: ${theme.colors.primaryColor};
+    }
+
     h1 {
       color: ${theme.colors.fourthColor};
-      font-family: 'Licorice';
     }
   `}
 `;
@@ -80,9 +87,82 @@ export const AboutMe = styled.div`
 // Style dos elementos utilizados
 
 export const ThreeGridTemplate = styled.div`
-  ${() => css`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 32px 0px;
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 40px 0px;
+    padding: 40px 50px;
+
+    .call-grid {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      max-width: 400px;
+      
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        margin: 30px;
+        text-align: center;
+        font-family: ${theme.font.family.primaryFont};
+        color: ${theme.colors.fifthColor};
+      }
+
+      .subtitle {
+        text-align: center;
+        font-family: ${theme.font.family.primaryFont};
+      }
+    }
+
+    .image-grid {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      
+      img {
+        width: 400px;
+        height: 300px;
+        box-shadow: 0 0 2em ${theme.colors.primaryColor};
+        border-radius: 4px;
+      }
+    }
+
+    .description-grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: ${theme.colors.primaryColor};
+      height: 700px;
+      max-width: 300px;
+      padding: 30px;
+      margin: 0;
+
+      button {
+        position: absolute;
+        margin-top: 760px;
+      }
+
+      p {
+        font-family: ${theme.font.family.primaryFont};
+        color: ${theme.colors.fifthColor};
+        text-align: justify;
+      }
+
+      h1 {
+        font-family: ${theme.font.family.titleFont};
+        margin: 30px 0px;
+        width: 100%;
+        text-align: left;
+      }
+    }
   `}
 `;

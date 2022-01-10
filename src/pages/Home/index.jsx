@@ -41,16 +41,39 @@ export function Home() {
         </div>
       </FirstView>
       <AboutMe>
-        <h1 className="wave">Conheça Eliana</h1>
+        <div className="subpage-introduction">
+          <h1 className="title">Conheça Eliana</h1>
+          <small>Sua futura Coach que te guiará ao sucesso</small>
+        </div>
+
         <ThreeGridTemplate>
           <div className="call-grid">
-            <p>O que eliana faz, com o que trabalha e uma chamada rápida</p>
+            <div>
+              <h1 className="subtitle">COACH E PSICANALISTA</h1>
+            </div>
+            <div>
+              <p>COACH PROFISSIONAL E DE VIDA</p>
+              <p>25 ANOS DE EXPERIÊNCIA GERENCIANDO PESSOAS</p>
+              <p>ESPECIALISTA EM ...</p>
+            </div>
+
           </div>
           <div className="image-grid">
-            3 ou 4 imagens sobre eliana trabalhando
+            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="home office" />
+            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778972/meeting_iid821.jpg" alt="meeting" />
+            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641779003/results_wvfgqw.jpg" alt="results" />
           </div>
           <div className="description-grid">
-            Descrição rápida sobre eliana
+            <h1>Quem é Eliana?</h1>
+            <p>
+              Graduada em Administração, MBA em Liderança e Coach ,
+              25 anos de experiência em liderança, desenvolvimento
+              humano, gestão de pessoas.
+              Me proponho a ajudar você a mergulhar no autoconhecimento,
+              entendendo seus limites, ganhando autoconfiança,
+              aprendendo com os erros e alavancando sua vida e carreira.
+            </p>
+            <ButtonCall type="button">SAIBA MAIS SOBRE MIM</ButtonCall>
           </div>
         </ThreeGridTemplate>
       </AboutMe>
