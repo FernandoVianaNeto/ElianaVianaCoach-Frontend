@@ -202,6 +202,7 @@ export const ThreeGridTemplate = styled.div`
         margin: 30px 0px;
         width: 100%;
         text-align: left;
+        transform: rotate(-3deg);
       }
     }
   `}
