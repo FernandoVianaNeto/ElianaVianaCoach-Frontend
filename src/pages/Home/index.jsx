@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RiFootprintFill } from 'react-icons/ri';
 import { GrLinkNext } from 'react-icons/gr';
 import { Menu } from '../../components/Menu';
@@ -12,6 +12,23 @@ import { WorkCard } from '../../components/WorkCard';
 import { TestimonyCard } from '../../components/TestimonyCard';
 
 export function Home() {
+  const [testimony1, setTestimony1] = useState(true);
+  const [testimony2, setTestimony2] = useState(false);
+  const [testimony3, setTestimony3] = useState(false);
+
+  function handleChangeTestimony() {
+    if (testimony1 === true) {
+      setTestimony1(false);
+      setTestimony2(true);
+    } else if (testimony2 === true) {
+      setTestimony2(false);
+      setTestimony3(true);
+    } else {
+      setTestimony1(true);
+      setTestimony3(false);
+    }
+  }
+
   return (
     <Container>
       {/* <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1623179162/small_pexels_photo_3171837_bbf66f242c.jpg" alt="first view background" /> */}
@@ -121,29 +138,66 @@ export function Home() {
         <TestimonyGrid>
           <div className="left-column">
             <h1 className="title">O que meus clientes falam de mim?</h1>
-            <TestimonyCard name="Fernando">
-              <p>
-                Sylvie helped me see that I was heading for burnout at a
-                breakneck pace. I needed to slow down and start taking better
-                care of myself, because my business was paying the consequences.
-                I couldnt focus, I had no clue what direction I was going,
-                and I hated sitting down to work. With Sylvies guidance,
-                I was able to create a health and wellness routine that
-                includes me, me, and more me. I make the right food choices,
-                get enough sleep, and move my body everyday. As a result,
-                my business has never been better.
-                I work hard and love every minute of it, instead of dreading work days.
-              </p>
-            </TestimonyCard>
+            {testimony1 === true && (
+              <TestimonyCard name="Fernando">
+                <p>
+                  Sylvie helped me see that I was heading for burnout at a
+                  breakneck pace. I needed to slow down and start taking better
+                  care of myself, because my business was paying the consequences.
+                  I couldnt focus, I had no clue what direction I was going,
+                  and I hated sitting down to work. With Sylvies guidance,
+                  I was able to create a health and wellness routine that
+                  includes me, me, and more me. I make the right food choices,
+                  get enough sleep, and move my body everyday. As a result,
+                  my business has never been better.
+                  I work hard and love every minute of it, instead of dreading work days.
+                </p>
+              </TestimonyCard>
+            )}
+            {testimony2 === true && (
+              <TestimonyCard name="Fernando1">
+                <p>
+                  Sylvie helped me see that I was heading for burnout at a
+                  breakneck pace. I needed to slow down and start taking better
+                  care of myself, because my business was paying the consequences.
+                  I couldnt focus, I had no clue what direction I was going,
+                  and I hated sitting down to work. With Sylvies guidance,
+                  I was able to create a health and wellness routine that
+                  includes me, me, and more me. I make the right food choices,
+                  get enough sleep, and move my body everyday. As a result,
+                  my business has never been better.
+                  I work hard and love every minute of it, instead of dreading work days.
+                </p>
+              </TestimonyCard>
+            )}
+            {testimony3 === true && (
+              <TestimonyCard name="Fernando2">
+                <p>
+                  Sylvie helped me see that I was heading for burnout at a
+                  breakneck pace. I needed to slow down and start taking better
+                  care of myself, because my business was paying the consequences.
+                  I couldnt focus, I had no clue what direction I was going,
+                  and I hated sitting down to work. With Sylvies guidance,
+                  I was able to create a health and wellness routine that
+                  includes me, me, and more me. I make the right food choices,
+                  get enough sleep, and move my body everyday. As a result,
+                  my business has never been better.
+                  I work hard and love every minute of it, instead of dreading work days.
+                </p>
+              </TestimonyCard>
+            )}
             <div className="button-container">
-              <button type="button">
+              <button type="button" onClick={handleChangeTestimony}>
                 Ver mais
                 {' '}
                 <GrLinkNext />
               </button>
             </div>
           </div>
-          <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="coach" />
+          <div className="img-container">
+            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="coach" />
+          </div>
+
         </TestimonyGrid>
       </Testimonys>
     </Container>

@@ -88,7 +88,7 @@ export const AboutMe = styled.div`
 export const EspecialidadesMenu = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.colors.primaryColor};
-    min-height: 100vh;
+    max-height: 100vh;
     padding: 40px 50px;
 
     .title {
@@ -107,7 +107,12 @@ export const EspecialidadesMenu = styled.div`
 
 export const Testimonys = styled.div`
   ${({ theme }) => css`
-    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    min-height: 60vh;
 
     .title {
       margin-top: 20px;
@@ -204,11 +209,12 @@ export const ThreeGridTemplate = styled.div`
 
 export const EspecialidadesGrid = styled.div`
   ${() => css`
+    max-width: 1500px;
+    margin: 0 auto;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    margin: 100px 40px;
-    padding: 100px 40px;
+    padding: 20px;
     height: 100%;
   `}
 `;
@@ -218,8 +224,13 @@ export const TestimonyGrid = styled.div`
     display: flex;
     justify-content: space-between;
 
+    .img-container {
+      height: 100%;
+    }
+
     img {
-      height: 60vh;
+      height: 100%;
+      flex: 1;
       opacity: 0.7;
     }
 
