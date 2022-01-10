@@ -10,6 +10,7 @@ export const Container = styled.div`
     img {
       width: 400px;
       height: 270px;
+      border-radius: 4px;
     }
 
     p {
