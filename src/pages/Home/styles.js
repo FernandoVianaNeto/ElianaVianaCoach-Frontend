@@ -124,6 +124,27 @@ export const Testimonys = styled.div`
   `}
 `;
 
+export const Schedule = styled.div`
+  ${({ theme }) => css`
+    height: 50vh;
+    background-color: ${theme.colors.fifthColor};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      color: ${theme.colors.primaryColor};
+      font-family: ${theme.font.family.secundaryFont};
+    }
+
+    .title {
+      color: ${theme.colors.fourthColor};
+      font-family: ${theme.font.family.secundaryFont};
+    }
+  `}
+`;
+
 // Style dos elementos utilizados
 
 export const ThreeGridTemplate = styled.div`
@@ -165,7 +186,6 @@ export const ThreeGridTemplate = styled.div`
       flex-direction: column;
       align-items: center;
       gap: 20px;
-
       
       img {
         width: 400px;

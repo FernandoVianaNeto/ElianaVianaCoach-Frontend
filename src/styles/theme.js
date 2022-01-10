@@ -9,10 +9,12 @@ export const theme = {
   font: {
     family: {
       primaryFont: "'Oswald', sans-serif",
+      secundaryFont: "'Poppins', sans-serif",
       // primaryFont: "'Dosis', sans-serif",
       logoFont: "'The Nautigal', cursive",
       titleFont: "'Licorice', cursive",
       subtitleFont: "'Open Sans Condensed', sans-serif",
+
     },
   },
 };

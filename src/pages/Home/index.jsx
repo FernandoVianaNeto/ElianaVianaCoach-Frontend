@@ -5,7 +5,7 @@ import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import {
   Container, FirstView, AboutMe, ThreeGridTemplate, MenuContainer, EspecialidadesMenu,
-  EspecialidadesGrid, Testimonys, TestimonyGrid,
+  EspecialidadesGrid, Testimonys, TestimonyGrid, Schedule,
 } from './styles';
 import { ButtonCall } from '../../components/ButtonCall';
 import { WorkCard } from '../../components/WorkCard';
@@ -64,7 +64,7 @@ export function Home() {
       <AboutMe>
         <div className="subpage-introduction">
           <h1 className="title">Conheça Eliana</h1>
-          <small>Sua futura Coach que te guiará ao sucesso</small>
+          <small>Sua Coach que te guiará ao sucesso</small>
         </div>
 
         <ThreeGridTemplate>
@@ -200,6 +200,11 @@ export function Home() {
 
         </TestimonyGrid>
       </Testimonys>
+      <Schedule>
+        <h3>Sua vida não está da forma como gostaria?</h3>
+        <h1 className="title">Venha conversar comigo</h1>
+        <ButtonCall>Buscar ajuda</ButtonCall>
+      </Schedule>
     </Container>
   );
 }

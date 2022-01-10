@@ -7,7 +7,7 @@ export const ButtonCall = styled.button`
     justify-content: center;
     gap: 10px;
 
-    font-family: ${theme.font.family.primaryFont};
+    font-family: ${theme.font.family.secundaryFont};
     font-size: 18px;
     font-weight: bold;
     color: ${theme.colors.primaryColor};
