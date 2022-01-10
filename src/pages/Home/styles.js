@@ -17,11 +17,18 @@ export const Container = styled.div`
   `}
 `;
 
+export const MenuContainer = styled.div`
+  ${() => css`
+    padding: 20px 100px;
+
+  `}
+`;
+
 // Styles das subpages
 
 export const FirstView = styled.main`
   ${({ theme }) => css`
-    padding: 20px 100px;
+    min-height: 80vh;
 
     .column-left {
       display: flex; 
@@ -61,10 +68,21 @@ export const AboutMe = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
     padding: 40px 100px;
-    font-family: 'Licorice';
     font-size: 24px;
-    color: ${theme.colors.fourthColor};
+    
+    h1 {
+      color: ${theme.colors.fourthColor};
+      font-family: 'Licorice';
+    }
   `}
 `;
 
 // Style dos elementos utilizados
+
+export const ThreeGridTemplate = styled.div`
+  ${() => css`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 32px 0px;
+  `}
+`;
