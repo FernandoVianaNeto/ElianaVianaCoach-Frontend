@@ -18,7 +18,7 @@ export const LogoContainer = styled.div`
     justify-content: flex-end;
     background-color: ${theme.colors.fifthColor};
 
-    h3 {
+    h2 {
       margin: 0;
       padding: 0;
       font-family: ${theme.font.family.logoFont};

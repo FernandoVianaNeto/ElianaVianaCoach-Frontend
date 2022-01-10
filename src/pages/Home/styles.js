@@ -86,7 +86,22 @@ export const AboutMe = styled.div`
 `;
 
 export const EspecialidadesMenu = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
+    background-color: ${theme.colors.primaryColor};
+    min-height: 100vh;
+    padding: 40px 50px;
+
+    .title {
+      font-family: ${theme.font.family.titleFont};
+      font-size: 60px;
+      color: ${theme.colors.fourthColor};
+      transform: rotate(-3deg);
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
   `}
 `;
 
@@ -170,5 +185,16 @@ export const ThreeGridTemplate = styled.div`
         text-align: left;
       }
     }
+  `}
+`;
+
+export const EspecialidadesGrid = styled.div`
+  ${() => css`
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 40px;
+    padding: 100px 40px;
+    height: 100%;
   `}
 `;

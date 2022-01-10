@@ -17,6 +17,7 @@ export const ButtonCall = styled.button`
     cursor: pointer;
 
     border: 1px solid ${theme.colors.fourthColor};
+    border-radius: 4px;
 
   `}
 `;

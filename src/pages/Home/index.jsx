@@ -4,8 +4,10 @@ import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import {
   Container, FirstView, AboutMe, ThreeGridTemplate, MenuContainer, EspecialidadesMenu,
+  EspecialidadesGrid,
 } from './styles';
 import { ButtonCall } from '../../components/ButtonCall';
+import { WorkCard } from '../../components/WorkCard';
 
 export function Home() {
   return (
@@ -78,7 +80,40 @@ export function Home() {
         </ThreeGridTemplate>
       </AboutMe>
       <EspecialidadesMenu>
-        <h1>Como será meu trabalho com você</h1>
+        <h1 className="title">Como é o meu trabalho</h1>
+        <EspecialidadesGrid>
+          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Work">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat. Ut wisi enim ad minim veniam,
+              quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip ex ea commodo.
+              {' '}
+            </p>
+          </WorkCard>
+          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Work">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt
+              ut laoreet dolore magna aliquam erat volutpat.
+              Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex
+              ea commodo.
+              {' '}
+            </p>
+          </WorkCard>
+          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Work">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+              quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+              ut aliquip ex ea commodo.
+            </p>
+          </WorkCard>
+        </EspecialidadesGrid>
+        <div className="footer"><ButtonCall>SAIBA MAIS</ButtonCall></div>
       </EspecialidadesMenu>
     </Container>
   );

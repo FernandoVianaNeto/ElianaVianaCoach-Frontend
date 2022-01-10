@@ -15,7 +15,7 @@ export function Menu({ children }) {
         {children}
       </ChildrenContainer>
       <LogoContainer>
-        <h3>ElianaViana Coach</h3>
+        <h2>ElianaViana Coach</h2>
       </LogoContainer>
       <ButtonsContainer>
         <ButtonLink>
