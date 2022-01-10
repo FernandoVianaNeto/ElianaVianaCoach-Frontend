@@ -71,6 +71,7 @@ export const AboutMe = styled.div`
       font-size: 60px;
       color: ${theme.colors.fourthColor};
       font-family: ${theme.font.family.titleFont};
+      transform: rotate(-2deg);
     }
 
     small {
@@ -81,6 +82,11 @@ export const AboutMe = styled.div`
     h1 {
       color: ${theme.colors.fourthColor};
     }
+  `}
+`;
+
+export const EspecialidadesMenu = styled.div`
+  ${() => css`
   `}
 `;
 

@@ -3,7 +3,7 @@ import { RiFootprintFill } from 'react-icons/ri';
 import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import {
-  Container, FirstView, AboutMe, ThreeGridTemplate, MenuContainer,
+  Container, FirstView, AboutMe, ThreeGridTemplate, MenuContainer, EspecialidadesMenu,
 } from './styles';
 import { ButtonCall } from '../../components/ButtonCall';
 
@@ -77,6 +77,9 @@ export function Home() {
           </div>
         </ThreeGridTemplate>
       </AboutMe>
+      <EspecialidadesMenu>
+        <h1>Como será meu trabalho com você</h1>
+      </EspecialidadesMenu>
     </Container>
   );
 }
