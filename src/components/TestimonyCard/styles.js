@@ -15,6 +15,7 @@ export const Container = styled.div`
       text-align: center;
       font-family: ${theme.font.family.titleFont};
       font-size: 36px;
+      color: ${theme.colors.fourthColor};
     }
   `}
 `;

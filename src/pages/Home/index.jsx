@@ -66,7 +66,6 @@ export function Home() {
           <h1 className="title">Conheça Eliana</h1>
           <small>Sua Coach que te guiará ao sucesso</small>
         </div>
-
         <ThreeGridTemplate>
           <div className="call-grid">
             <div>
@@ -77,7 +76,6 @@ export function Home() {
               <p>25 ANOS DE EXPERIÊNCIA GERENCIANDO PESSOAS</p>
               <p>ESPECIALISTA EM ...</p>
             </div>
-
           </div>
           <div className="image-grid">
             <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="home office" />

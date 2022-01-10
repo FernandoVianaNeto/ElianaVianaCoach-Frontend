@@ -134,13 +134,13 @@ export const Schedule = styled.div`
     justify-content: center;
 
     h3 {
-      color: ${theme.colors.primaryColor};
-      font-family: ${theme.font.family.secundaryFont};
+      color: ${theme.colors.complementarColor};
+      font-family: ${theme.font.family.secondaryFont};
     }
 
     .title {
       color: ${theme.colors.fourthColor};
-      font-family: ${theme.font.family.secundaryFont};
+      font-family: ${theme.font.family.secondaryFont};
     }
   `}
 `;
