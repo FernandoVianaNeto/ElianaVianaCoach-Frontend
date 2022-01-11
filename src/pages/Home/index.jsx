@@ -7,9 +7,9 @@ import {
   Container, FirstView, AboutMe, ThreeGridTemplate, MenuContainer, EspecialidadesMenu,
   EspecialidadesGrid, Testimonys, TestimonyGrid, Schedule,
 } from './styles';
-import { ButtonCall } from '../../components/ButtonCall';
 import { WorkCard } from '../../components/WorkCard';
 import { TestimonyCard } from '../../components/TestimonyCard';
+import { ButtonLink } from '../../components/ButtonLink';
 
 export function Home() {
   const [testimony1, setTestimony1] = useState(true);
@@ -36,7 +36,7 @@ export function Home() {
         <Menu>
           <MenuLink local="HOME" link="/" />
           <MenuLink local="SOBRE MIM" link="/" />
-          <MenuLink local="ESPECIALIDADES" link="/" />
+          <MenuLink local="ESPECIALIDADES" link="/especialidades" />
         </Menu>
       </MenuContainer>
       <FirstView>
@@ -53,11 +53,11 @@ export function Home() {
             </h1>
           </div>
           <div className="button-container">
-            <ButtonCall type="button">
+            <ButtonLink href="/">
               Dê o primeiro passo
               {' '}
               <RiFootprintFill />
-            </ButtonCall>
+            </ButtonLink>
           </div>
         </div>
       </FirstView>
@@ -92,7 +92,7 @@ export function Home() {
               entendendo seus limites, ganhando autoconfiança,
               aprendendo com os erros e alavancando sua vida e carreira.
             </p>
-            <ButtonCall type="button">SAIBA MAIS SOBRE MIM</ButtonCall>
+            <ButtonLink href="/especialidades">SAIBA MAIS SOBRE MIM</ButtonLink>
           </div>
         </ThreeGridTemplate>
       </AboutMe>
@@ -130,7 +130,7 @@ export function Home() {
             </p>
           </WorkCard>
         </EspecialidadesGrid>
-        <div className="footer"><ButtonCall>SAIBA MAIS</ButtonCall></div>
+        <div className="footer"><ButtonLink href="/especialidades">SAIBA MAIS</ButtonLink></div>
       </EspecialidadesMenu>
       <Testimonys>
         <TestimonyGrid>
@@ -201,7 +201,7 @@ export function Home() {
       <Schedule>
         <h3>Sua vida não está da forma como gostaria?</h3>
         <h1 className="title">Venha conversar comigo</h1>
-        <ButtonCall>Buscar ajuda</ButtonCall>
+        <ButtonLink>Buscar ajuda</ButtonLink>
       </Schedule>
     </Container>
   );

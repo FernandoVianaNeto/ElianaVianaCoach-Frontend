@@ -52,6 +52,10 @@ export const FirstView = styled.main`
         margin: 0px 50px;
         display: flex;
         align-items: center;
+
+        a {
+          font-size: 20px;
+        }
       }
     }
   `}
@@ -206,9 +210,10 @@ export const ThreeGridTemplate = styled.div`
       padding: 30px;
       margin: 0;
 
-      button {
+      a {
         position: absolute;
         margin-top: 760px;
+        font-size: 20px;
       }
 
       p {

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const ButtonLink = styled.button`
+export const ButtonLink = styled.a`
   ${({ theme }) => css`
     color: ${theme.colors.primaryColor};
     font-family: ${theme.font.family.primaryFont};
@@ -10,5 +10,6 @@ export const ButtonLink = styled.button`
     border-radius: 4px;
     background-color: ${theme.colors.fourthColor};
     border: 1px solid ${theme.colors.fourthColor};
+    text-decoration: none;
   `}
 `;
