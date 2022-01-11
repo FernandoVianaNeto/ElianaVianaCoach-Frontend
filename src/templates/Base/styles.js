@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${({ theme }) => css`
-    background-color: ${theme.colors.secundaryColor};
+  ${() => css`
     min-height: 100vh;
   `}
 `;
@@ -15,6 +14,9 @@ export const MenuContainer = styled.div`
 
 export const Content = styled.div`
   ${() => css`
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
   `}
 `;
