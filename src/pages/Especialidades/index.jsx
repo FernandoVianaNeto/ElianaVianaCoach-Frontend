@@ -1,15 +1,25 @@
 import React from 'react';
 // import P from 'prop-types';
-import { Container, FirstView } from './styles';
-import { Base } from '../../templates/Base';
+import {
+  Container, FirstView, EspecialidadesComponents, ContentFirstView,
+} from './styles';
+import { MenuContainer } from '../../components/Base';
+import { Menu } from '../../components/Menu';
+import { MenuLink } from '../../components/MenuLink';
 
 export function Especialidades() {
   return (
     <Container>
-      <Base>
+      <FirstView>
         <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="fundo" />
-        <FirstView>
-
+        <MenuContainer>
+          <Menu>
+            <MenuLink local="HOME" link="/" />
+            <MenuLink local="SOBRE MIM" link="/" />
+            <MenuLink local="ESPECIALIDADES" link="/especialidades" />
+          </Menu>
+        </MenuContainer>
+        <ContentFirstView>
           <div className="title">
             <h1>Cansado de se sentir perdido com os seus objetivos?</h1>
             <h3>Temos a sua solução</h3>
@@ -36,8 +46,12 @@ export function Especialidades() {
               dignissim qui blandit praesent.
             </p>
           </div>
-        </FirstView>
-      </Base>
+        </ContentFirstView>
+      </FirstView>
+      <EspecialidadesComponents>
+        <h1>Especialidades</h1>
+      </EspecialidadesComponents>
+
     </Container>
   );
 }

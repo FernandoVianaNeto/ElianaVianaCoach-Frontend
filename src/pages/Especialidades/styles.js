@@ -2,25 +2,23 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${() => css`
+    height: 100vh;
+
     img {
       position: absolute;
       z-index: -1;
       opacity: 0.3;
       width: 100%;
+      min-height: 100%;
     }
   `}
 `;
 
 export const FirstView = styled.div`
   ${({ theme }) => css`
-    height: 50vh;
+    min-height: 60vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    margin-top: 70px;
+    margin: 0 auto;
 
     .title {
       display: flex;
@@ -49,7 +47,22 @@ export const FirstView = styled.div`
       margin: 70px;
 
       font-family: ${theme.font.family.primaryFont};
-
     }
+  `}
+`;
+
+export const EspecialidadesComponents = styled.div`
+  ${({ theme }) => css`
+    min-height: 100vh;
+    background-color: ${theme.colors.secundaryColor};
+  `}
+`;
+
+// Componentes
+
+export const ContentFirstView = styled.div`
+  ${() => css`
+    margin: 150px 100px;
+    padding: 20px;
   `}
 `;

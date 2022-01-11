@@ -15,6 +15,7 @@ export const MenuContainer = styled.div`
 export const Content = styled.div`
   ${() => css`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 30px;
