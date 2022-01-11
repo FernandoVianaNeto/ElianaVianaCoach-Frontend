@@ -51,7 +51,6 @@ export function Especialidades() {
       <EspecialidadesComponents>
         <h1>Especialidades</h1>
       </EspecialidadesComponents>
-
     </Container>
   );
 }
