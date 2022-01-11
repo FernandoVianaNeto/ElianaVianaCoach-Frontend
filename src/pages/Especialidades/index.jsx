@@ -1,11 +1,14 @@
 import React from 'react';
 // import P from 'prop-types';
 import { Container } from './styles';
+import { Base } from '../../templates/Base';
 
 export function Especialidades() {
   return (
     <Container>
-      <h1>Especialidade</h1>
+      <Base>
+        <h1>Fernando</h1>
+      </Base>
     </Container>
   );
 }
