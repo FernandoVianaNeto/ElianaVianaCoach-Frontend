@@ -53,7 +53,7 @@ export function Home() {
             </h1>
           </div>
           <div className="button-container">
-            <ButtonLink href="/">
+            <ButtonLink href="/especialidades">
               Dê o primeiro passo
               {' '}
               <RiFootprintFill />

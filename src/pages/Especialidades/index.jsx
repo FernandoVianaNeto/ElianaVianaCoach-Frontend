@@ -1,7 +1,8 @@
 import React from 'react';
 // import P from 'prop-types';
 import {
-  Container, FirstView, EspecialidadesComponents, ContentFirstView, Questions, EspecialidadesGrid,
+  Container, FirstView, EspecialidadesComponents, ContentFirstView, Questions,
+  EspecialidadesGrid,
 } from './styles';
 import { MenuContainer } from '../../components/Base';
 import { Menu } from '../../components/Menu';
@@ -83,6 +84,7 @@ export function Especialidades() {
         </EspecialidadesGrid>
       </EspecialidadesComponents>
       <Questions>
+
         <div className="left-column">
           <h1>Tem alguma dúvida? Tire ela aqui!</h1>
         </div>
@@ -92,6 +94,7 @@ export function Especialidades() {
           />
           <ButtonCall type="submit">Enviar</ButtonCall>
         </div>
+
       </Questions>
     </Container>
   );

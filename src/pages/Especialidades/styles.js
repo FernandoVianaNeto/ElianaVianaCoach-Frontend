@@ -9,7 +9,7 @@ export const Container = styled.div`
       z-index: -1;
       opacity: 0.3;
       width: 100%;
-      min-height: 100%;
+      max-height: 100%;
     }
   `}
 `;
@@ -52,12 +52,11 @@ export const FirstView = styled.div`
 `;
 
 export const EspecialidadesComponents = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-height: 100vh;
-    background-color: ${theme.colors.secundaryColor};
     margin: 0 auto;
   `}
 `;
@@ -65,10 +64,11 @@ export const EspecialidadesComponents = styled.div`
 export const Questions = styled.div`
   ${({ theme }) => css`
     padding: 20px;
-    background-color: ${theme.colors.secundaryColor};
     display: flex;
     align-items: center;
     justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
 
     .left-column {
       margin: 50px;
@@ -90,6 +90,7 @@ export const Questions = styled.div`
       align-items: center;
       justify-content: center;
       gap: 20px;
+      flex: 1;
     }
   `}
 `;
@@ -112,6 +113,9 @@ export const EspecialidadesGrid = styled.div`
 
 export const QuestionGrid = styled.div`
   ${() => css`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1500px;
     margin: 0 auto;
   `}
