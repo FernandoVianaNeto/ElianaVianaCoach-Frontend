@@ -4,7 +4,7 @@ export const Container = styled.div`
   ${() => css`
     height: 100vh;
 
-    img {
+    .img-background {
       position: absolute;
       z-index: -1;
       opacity: 0.3;
@@ -53,8 +53,13 @@ export const FirstView = styled.div`
 
 export const EspecialidadesComponents = styled.div`
   ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     min-height: 100vh;
     background-color: ${theme.colors.secundaryColor};
+    max-width: 1500px;
+    margin: 0 auto;
   `}
 `;
 

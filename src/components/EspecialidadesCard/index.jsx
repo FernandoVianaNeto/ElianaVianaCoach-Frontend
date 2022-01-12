@@ -7,22 +7,27 @@ export function EspecialidadesCard({
   children, title, subtitle, buttontext, imglink, invert,
 }) {
   return (
-    <Container>
+    <Container invert={invert}>
       {
         invert ? (
+          <>
+            <img src={imglink} alt="Especialidade foto" />
+            <div className="column">
+              <h1>{title}</h1>
+              <h3>{subtitle}</h3>
+              <p>{children}</p>
+              <div className="button-container"><ButtonLink>{buttontext}</ButtonLink></div>
+            </div>
+          </>
+        ) : (
           <>
             <div className="column">
               <h1>{title}</h1>
               <h3>{subtitle}</h3>
               <p>{children}</p>
-              <ButtonLink>{buttontext}</ButtonLink>
+              <div className="button-container"><ButtonLink>{buttontext}</ButtonLink></div>
             </div>
             <img src={imglink} alt="Especialidade foto" />
-          </>
-        ) : (
-          <>
-            <img src={imglink} alt="Especialidade foto" />
-            <div className="column" />
           </>
         )
       }

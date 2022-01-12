@@ -12,7 +12,7 @@ export function Especialidades() {
   return (
     <Container>
       <FirstView>
-        <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="fundo" />
+        <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="fundo" className="img-background" />
         <MenuContainer>
           <Menu>
             <MenuLink local="HOME" link="/" />
@@ -50,7 +50,25 @@ export function Especialidades() {
         </ContentFirstView>
       </FirstView>
       <EspecialidadesComponents>
+        <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
+          The quickest path to burnout as an entrepreneur is working
+          all the time and not taking care of yourself.
+          In order to break your bad habits, you need a mentor
+          who can help you self-correct and make yourself a priority.
+          Well work together to build a customized wellness and self-care
+          routine, and manage your mind around people-pleasing and putting
+          others first.
+        </EspecialidadesCard>
         <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg">
+          The quickest path to burnout as an entrepreneur is working
+          all the time and not taking care of yourself.
+          In order to break your bad habits, you need a mentor
+          who can help you self-correct and make yourself a priority.
+          Well work together to build a customized wellness and self-care
+          routine, and manage your mind around people-pleasing and putting
+          others first.
+        </EspecialidadesCard>
+        <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
           The quickest path to burnout as an entrepreneur is working
           all the time and not taking care of yourself.
           In order to break your bad habits, you need a mentor
