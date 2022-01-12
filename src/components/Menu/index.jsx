@@ -1,6 +1,6 @@
 import React from 'react';
 import P from 'prop-types';
-import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
+import { AiFillInstagram, AiFillFacebook, AiOutlineWhatsApp } from 'react-icons/ai';
 
 import {
   Container, LogoContainer, ChildrenContainer, ButtonsContainer,
@@ -23,9 +23,10 @@ export function Menu({ children }) {
         </ButtonLink>
         <MenuLink link="/" local="BLOG" />
         <MenuLink link="/contato" local="CONTATO" />
-        <div>
-          <AiFillInstagram size="16" />
-          <AiFillFacebook />
+        <div className="social-media-container">
+          <a href="/"><AiFillInstagram /></a>
+          <a href="/"><AiFillFacebook /></a>
+          <a href="/"><AiOutlineWhatsApp /></a>
         </div>
       </ButtonsContainer>
     </Container>

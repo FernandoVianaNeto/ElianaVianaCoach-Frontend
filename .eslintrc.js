@@ -20,5 +20,6 @@ module.exports = {
   rules: {
     'linebreak-style': 'off',
     'import/prefer-default-export': 'off',
+    'jsx-a11y/control-has-associated-label': 'off',
   },
 };

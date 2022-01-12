@@ -58,5 +58,20 @@ export const ButtonsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .social-media-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      gap: 10px;
+
+      a {
+        color: ${theme.colors.primaryColor};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   `}  
 `;
