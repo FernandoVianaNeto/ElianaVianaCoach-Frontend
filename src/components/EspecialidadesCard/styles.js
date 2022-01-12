@@ -20,9 +20,9 @@ export const Container = styled.div`
       margin: 50px;
 
       h1 {
-        transform: 
+        transform: rotate(-2deg);
         font-family: ${theme.font.family.titleFont};
-        font-size: 36px;
+        font-size: 44px;
         color: ${theme.colors.fourthColor};
       }
 
