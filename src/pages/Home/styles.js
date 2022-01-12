@@ -1,12 +1,18 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     padding: 0;
     margin: 0;
 
     z-index: 0;
-    background-color: ${theme.colors.secundaryColor};
+
+    .background-image {
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      opacity: 0.8;
+    }
   `}
 `;
 
