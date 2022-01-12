@@ -1,12 +1,14 @@
 import React from 'react';
 // import P from 'prop-types';
 import {
-  Container, FirstView, EspecialidadesComponents, ContentFirstView,
+  Container, FirstView, EspecialidadesComponents, ContentFirstView, Questions, EspecialidadesGrid,
 } from './styles';
 import { MenuContainer } from '../../components/Base';
 import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
 import { EspecialidadesCard } from '../../components/EspecialidadesCard';
+import { Input } from '../../components/Input';
+import { ButtonCall } from '../../components/ButtonCall';
 
 export function Especialidades() {
   return (
@@ -50,34 +52,47 @@ export function Especialidades() {
         </ContentFirstView>
       </FirstView>
       <EspecialidadesComponents>
-        <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
-          The quickest path to burnout as an entrepreneur is working
-          all the time and not taking care of yourself.
-          In order to break your bad habits, you need a mentor
-          who can help you self-correct and make yourself a priority.
-          Well work together to build a customized wellness and self-care
-          routine, and manage your mind around people-pleasing and putting
-          others first.
-        </EspecialidadesCard>
-        <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg">
-          The quickest path to burnout as an entrepreneur is working
-          all the time and not taking care of yourself.
-          In order to break your bad habits, you need a mentor
-          who can help you self-correct and make yourself a priority.
-          Well work together to build a customized wellness and self-care
-          routine, and manage your mind around people-pleasing and putting
-          others first.
-        </EspecialidadesCard>
-        <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
-          The quickest path to burnout as an entrepreneur is working
-          all the time and not taking care of yourself.
-          In order to break your bad habits, you need a mentor
-          who can help you self-correct and make yourself a priority.
-          Well work together to build a customized wellness and self-care
-          routine, and manage your mind around people-pleasing and putting
-          others first.
-        </EspecialidadesCard>
+        <EspecialidadesGrid>
+          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
+            The quickest path to burnout as an entrepreneur is working
+            all the time and not taking care of yourself.
+            In order to break your bad habits, you need a mentor
+            who can help you self-correct and make yourself a priority.
+            Well work together to build a customized wellness and self-care
+            routine, and manage your mind around people-pleasing and putting
+            others first.
+          </EspecialidadesCard>
+          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg">
+            The quickest path to burnout as an entrepreneur is working
+            all the time and not taking care of yourself.
+            In order to break your bad habits, you need a mentor
+            who can help you self-correct and make yourself a priority.
+            Well work together to build a customized wellness and self-care
+            routine, and manage your mind around people-pleasing and putting
+            others first.
+          </EspecialidadesCard>
+          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
+            The quickest path to burnout as an entrepreneur is working
+            all the time and not taking care of yourself.
+            In order to break your bad habits, you need a mentor
+            who can help you self-correct and make yourself a priority.
+            Well work together to build a customized wellness and self-care
+            routine, and manage your mind around people-pleasing and putting
+            others first.
+          </EspecialidadesCard>
+        </EspecialidadesGrid>
       </EspecialidadesComponents>
+      <Questions>
+        <div className="left-column">
+          <h1>Tem alguma dúvida? Tire ela aqui!</h1>
+        </div>
+        <div className="right-column">
+          <Input
+            placeholder="Qual a sua dúvida?"
+          />
+          <ButtonCall type="submit">Enviar</ButtonCall>
+        </div>
+      </Questions>
     </Container>
   );
 }

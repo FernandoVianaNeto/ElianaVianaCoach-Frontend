@@ -58,8 +58,39 @@ export const EspecialidadesComponents = styled.div`
     gap: 20px;
     min-height: 100vh;
     background-color: ${theme.colors.secundaryColor};
-    max-width: 1500px;
     margin: 0 auto;
+  `}
+`;
+
+export const Questions = styled.div`
+  ${({ theme }) => css`
+    padding: 20px;
+    background-color: ${theme.colors.secundaryColor};
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .left-column {
+      margin: 50px;
+      padding: 30px 70px;
+      max-width: 300px;
+      text-align: center;
+      background-color: ${theme.colors.primaryColor};
+      border-radius: 4px;
+
+      h1 {
+        font-family: ${theme.font.family.titleFont};
+        font-size: 50px;
+        color: ${theme.colors.fourthColor};
+      }
+    }
+
+    .right-column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
   `}
 `;
 
@@ -69,5 +100,19 @@ export const ContentFirstView = styled.div`
   ${() => css`
     margin: 150px 100px;
     padding: 20px;
+  `}
+`;
+
+export const EspecialidadesGrid = styled.div`
+  ${() => css`
+    max-width: 1500px;
+    margin: 0 auto;
+  `}
+`;
+
+export const QuestionGrid = styled.div`
+  ${() => css`
+    max-width: 1500px;
+    margin: 0 auto;
   `}
 `;
