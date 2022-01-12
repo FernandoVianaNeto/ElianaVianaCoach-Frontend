@@ -12,7 +12,6 @@ export const Container = styled.div`
       z-index: -1;
       height: 100vh;
       width: 100%;
-      opacity: 0.8;
     }
   `}
 `;
@@ -20,7 +19,6 @@ export const Container = styled.div`
 export const MenuContainer = styled.div`
   ${() => css`
     padding: 20px 100px;
-
   `}
 `;
 
