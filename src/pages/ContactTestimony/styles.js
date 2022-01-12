@@ -24,6 +24,10 @@ export const MainContentGrid = styled.div`
     justify-content: center;
     margin-top: 100px;
 
+    .title {
+      transform: rotate(-2deg);
+    }
+
     .left-column {
       height: 100%;
       display: flex;

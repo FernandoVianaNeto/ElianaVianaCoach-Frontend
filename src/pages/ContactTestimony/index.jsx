@@ -25,8 +25,8 @@ export function ContactTestimony() {
       <MainContent>
         <MainContentGrid>
           <div className="left-column">
-            <h1>Fale com Eliana</h1>
-            <p className="subtitle">Agende sua sessão ou sinta se a vontade para me contatar com qualquer dúvida que tenha surgido.</p>
+            <h1 className="title">Envie o seu depoimento</h1>
+            <p className="subtitle">Compartilhe com os outros como foi a sua experiência conosco. Elogios, críticas e sugestões são bem-vindos.</p>
             <Form>
               <Input placeholder="Seu nome" />
               <Input placeholder="Seu e-mail" />
