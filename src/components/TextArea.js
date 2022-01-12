@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components';
 
-export const Input = styled.input`
+export const TextArea = styled.textarea`
   ${({ theme }) => css`
+    font-family: ${theme.font.family.primaryFont};
+    font-size: 16px;
+    padding: 16px;
     background-color: ${theme.colors.primaryColor};
-    padding: 0px 16px;
-    height: 45px;
     width: 100%;
     border-radius: 4px;
     border: 1px solid ${theme.colors.secundaryColor};
-    font-family: ${theme.font.family.primaryFont};
-    font-size: 16px;
+    resize: none;
   `}
 `;

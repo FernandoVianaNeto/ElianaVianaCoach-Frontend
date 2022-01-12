@@ -22,6 +22,7 @@ export function Menu({ children }) {
           Agendar sessão
         </ButtonLink>
         <MenuLink link="/" local="BLOG" />
+        <MenuLink link="/contato" local="CONTATO" />
         <div>
           <AiFillInstagram size="16" />
           <AiFillFacebook />
