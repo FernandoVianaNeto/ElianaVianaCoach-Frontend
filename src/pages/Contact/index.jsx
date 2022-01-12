@@ -1,6 +1,7 @@
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
 import { AiOutlineWhatsApp, AiOutlineClockCircle } from 'react-icons/ai';
+import { BiWorld } from 'react-icons/bi';
 import { Container, MainContent, MainContentGrid } from './styles';
 
 import { MenuContainer } from '../../components/Base';
@@ -50,7 +51,7 @@ export function Contact() {
               </p>
               <p>
                 {' '}
-                <AiOutlineClockCircle />
+                <BiWorld />
                 {'  '}
                 Encontre me no ZenClub
               </p>

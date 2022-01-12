@@ -10,7 +10,8 @@ export const Container = styled.div`
     .background-image {
       position: absolute;
       z-index: -1;
-      height: 100%;
+      height: 100vh;
+      width: 100%;
       opacity: 0.8;
     }
   `}
