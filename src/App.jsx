@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { Especialidades } from './pages/Especialidades';
 import { Contact } from './pages/Contact';
 import { ContactTestimony } from './pages/ContactTestimony';
+import { AboutMe } from './pages/AboutMe';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/especialidades" element={<Especialidades />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/enviardepoimento" element={<ContactTestimony />} />
+        <Route path="maissobremim" element={<AboutMe />} />
       </Routes>
     </BrowserRouter>
   );
