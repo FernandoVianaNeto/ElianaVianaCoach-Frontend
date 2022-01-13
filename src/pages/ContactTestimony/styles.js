@@ -3,8 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
-    margin: 0 auto;
-    background-color: ${theme.colors.primaryColor};
+    background-color: ${theme.colors.secundaryColor};
   `}
 `;
 
@@ -33,7 +32,7 @@ export const MainContentGrid = styled.div`
       display: flex;
       flex-direction: column;
       gap: 20px;
-      background-color: ${theme.colors.secundaryColor};
+      background-color: ${theme.colors.complementarColor};
       padding: 30px 66px 30px 50px;
       border-radius: 4px;
 

@@ -18,7 +18,7 @@ export function Menu({ children }) {
         <h2>ElianaViana Coach</h2>
       </LogoContainer>
       <ButtonsContainer>
-        <ButtonLink>
+        <ButtonLink href="/contato">
           Agendar sessão
         </ButtonLink>
         <MenuLink link="/" local="BLOG" />
