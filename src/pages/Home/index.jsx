@@ -92,7 +92,7 @@ export function Home() {
               entendendo seus limites, ganhando autoconfiança,
               aprendendo com os erros e alavancando sua vida e carreira.
             </p>
-            <ButtonLink href="/especialidades">SAIBA MAIS SOBRE MIM</ButtonLink>
+            <ButtonLink href="/maissobremim">SAIBA MAIS SOBRE MIM</ButtonLink>
           </div>
         </ThreeGridTemplate>
       </AboutMe>

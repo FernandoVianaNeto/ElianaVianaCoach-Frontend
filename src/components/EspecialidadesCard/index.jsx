@@ -4,7 +4,7 @@ import { Container } from './styles';
 import { ButtonLink } from '../ButtonLink';
 
 export function EspecialidadesCard({
-  children, title, subtitle, buttontext, imglink, invert,
+  children, title, subtitle, buttontext, imglink, invert, button,
 }) {
   return (
     <Container invert={invert}>
@@ -16,7 +16,10 @@ export function EspecialidadesCard({
               <h1>{title}</h1>
               <h3>{subtitle}</h3>
               <p>{children}</p>
-              <div className="button-container"><ButtonLink>{buttontext}</ButtonLink></div>
+              {
+                button
+                 && (<div className="button-container"><ButtonLink>{buttontext}</ButtonLink></div>)
+              }
             </div>
           </>
         ) : (
@@ -25,7 +28,9 @@ export function EspecialidadesCard({
               <h1>{title}</h1>
               <h3>{subtitle}</h3>
               <p>{children}</p>
-              <div className="button-container"><ButtonLink>{buttontext}</ButtonLink></div>
+              {
+                button && <div className="button-container"><ButtonLink>{buttontext}</ButtonLink></div>
+              }
             </div>
             <img src={imglink} alt="Especialidade foto" />
           </>
@@ -42,8 +47,10 @@ EspecialidadesCard.propTypes = {
   buttontext: P.string.isRequired,
   imglink: P.string.isRequired,
   invert: P.bool,
+  button: P.bool,
 };
 
 EspecialidadesCard.defaultProps = {
   invert: false,
+  button: false,
 };

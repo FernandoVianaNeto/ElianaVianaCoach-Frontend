@@ -54,7 +54,7 @@ export function Especialidades() {
       </FirstView>
       <EspecialidadesComponents>
         <EspecialidadesGrid>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
+          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor
@@ -63,7 +63,7 @@ export function Especialidades() {
             routine, and manage your mind around people-pleasing and putting
             others first.
           </EspecialidadesCard>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg">
+          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor
@@ -72,7 +72,7 @@ export function Especialidades() {
             routine, and manage your mind around people-pleasing and putting
             others first.
           </EspecialidadesCard>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
+          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor
@@ -84,7 +84,6 @@ export function Especialidades() {
         </EspecialidadesGrid>
       </EspecialidadesComponents>
       <Questions>
-
         <div className="left-column">
           <h1>Tem alguma dúvida? Tire ela aqui!</h1>
         </div>
