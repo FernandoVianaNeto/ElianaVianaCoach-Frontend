@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, MainContent, MainContentGrid } from './styles';
+import {
+  Container, MainContent, MainContentGrid, AboutMeDescription,
+} from './styles';
 import { EspecialidadesCard } from '../../components/EspecialidadesCard';
 import { MenuContainer } from '../../components/Base';
 import { Menu } from '../../components/Menu';
@@ -18,7 +20,7 @@ export function AboutMe() {
       <MainContent>
         <h1 className="main-title">(... mais sobre mim)</h1>
         <MainContentGrid>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert>
+          <EspecialidadesCard subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg">
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor
@@ -29,6 +31,51 @@ export function AboutMe() {
           </EspecialidadesCard>
         </MainContentGrid>
       </MainContent>
+      <AboutMeDescription>
+        <div className="img-grid">
+          <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="grid-description" />
+          <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="grid-description" />
+          <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="grid-description" />
+        </div>
+        <div className="text-grid">
+          <div className="topic">
+            <h1>Minha trajetória</h1>
+            <p>
+              The quickest path to burnout as an entrepreneur is working
+              all the time and not taking care of yourself.
+              In order to break your bad habits, you need a mentor
+              who can help you self-correct and make yourself a priority.
+              Well work together to build a customized wellness and self-care
+              routine, and manage your mind around people-pleasing and putting
+              others first.
+            </p>
+          </div>
+          <div className="topic">
+            <h1>Minha trajetória</h1>
+            <p>
+              The quickest path to burnout as an entrepreneur is working
+              all the time and not taking care of yourself.
+              In order to break your bad habits, you need a mentor
+              who can help you self-correct and make yourself a priority.
+              Well work together to build a customized wellness and self-care
+              routine, and manage your mind around people-pleasing and putting
+              others first.
+            </p>
+          </div>
+          <div className="topic">
+            <h1>Minha trajetória</h1>
+            <p>
+              The quickest path to burnout as an entrepreneur is working
+              all the time and not taking care of yourself.
+              In order to break your bad habits, you need a mentor
+              who can help you self-correct and make yourself a priority.
+              Well work together to build a customized wellness and self-care
+              routine, and manage your mind around people-pleasing and putting
+              others first.
+            </p>
+          </div>
+        </div>
+      </AboutMeDescription>
     </Container>
   );
 }
