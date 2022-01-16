@@ -51,13 +51,14 @@ export const FirstView = styled.div`
   `}
 `;
 
-export const EspecialidadesComponents = styled.div`
+export const TextsView = styled.div`
   ${() => css`
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-height: 100vh;
     margin: 0 auto;
+    padding: 30px;
   `}
 `;
 
@@ -105,7 +106,7 @@ export const ContentFirstView = styled.div`
   `}
 `;
 
-export const EspecialidadesGrid = styled.div`
+export const TextsViewGrid = styled.div`
   ${() => css`
     max-width: 1500px;
     margin: 0 auto;
