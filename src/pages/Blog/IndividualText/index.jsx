@@ -17,7 +17,7 @@ export function IndividualText() {
         </Menu>
       </MenuContainer>
       <Content>
-        <h1>Title</h1>
+        <h1 className="text-title">Title</h1>
         <ContentGrid>
           <div className="text-side">
             <p>
@@ -31,8 +31,9 @@ export function IndividualText() {
             </p>
           </div>
           <div className="left-column">
-            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="fundo" className="img-background" />
-            <TextCard />
+            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="fundo" className="img-text" />
+            <h2>Veja meus outros textos:</h2>
+            <TextCard title="Title" subtitle="Nam unde corrupti sed aperiam quo minus dignissimos et quam nulla. Qui officiis sit tempora omnis sed molestiae neque aut labore illo et magnam inventore qui similique excepturi" />
           </div>
         </ContentGrid>
       </Content>

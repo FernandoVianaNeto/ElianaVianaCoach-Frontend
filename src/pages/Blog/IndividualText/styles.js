@@ -13,10 +13,11 @@ export const Content = styled.div`
     text-align: center;
     padding: 50px;
     
-    h1 {
+    .text-title {
       font-family: ${theme.font.family.titleFont};
       color: ${theme.colors.fourthColor};
       font-size: 52px;
+      transform: rotate(-2deg);
     }
   `}
 `;
@@ -35,10 +36,19 @@ export const ContentGrid = styled.div`
     }
 
     .left-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
       padding: 50px;
+
+      h2 {
+        font-family: ${theme.font.family.titleFont};
+        color: ${theme.colors.fourthColor};
+      }
     }
 
-    img {
+    .img-text {
       border-radius: 4px;
       height: 300px;
     }

@@ -1,21 +1,25 @@
 import React from 'react';
 import P from 'prop-types';
-import { Container } from './styles';
+import { Container, Content } from './styles';
+import { ButtonLink } from '../ButtonLink';
 
 export function TextCard({
-  title, imglink, subtitle,
+  title, subtitle,
 }) {
   return (
     <Container>
-      <img src={imglink} alt="background" />
-      <h1>{title}</h1>
-      <h3>{subtitle}</h3>
+      <Content>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+        <div className="button-container">
+          <ButtonLink>Ler</ButtonLink>
+        </div>
+      </Content>
     </Container>
   );
 }
 
 TextCard.propTypes = {
   title: P.string.isRequired,
-  imglink: P.string.isRequired,
   subtitle: P.string.isRequired,
 };
