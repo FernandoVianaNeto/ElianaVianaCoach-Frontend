@@ -21,7 +21,7 @@ export function Menu({ children }) {
         <ButtonLink href="/contato">
           Agendar sessão
         </ButtonLink>
-        <MenuLink link="/" local="BLOG" />
+        <MenuLink link="/bloghome" local="BLOG" />
         <MenuLink link="/contato" local="CONTATO" />
         <div className="social-media-container">
           <a href="/"><AiFillInstagram /></a>

@@ -7,6 +7,10 @@ import { Contact } from './pages/Contact';
 import { ContactTestimony } from './pages/ContactTestimony';
 import { AboutMe } from './pages/AboutMe';
 
+// Blog pages
+
+import { HomeBlog } from './pages/Blog/HomeBlog';
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +20,7 @@ function App() {
         <Route path="/contato" element={<Contact />} />
         <Route path="/enviardepoimento" element={<ContactTestimony />} />
         <Route path="maissobremim" element={<AboutMe />} />
+        <Route path="/bloghome" element={<HomeBlog />} />
       </Routes>
     </BrowserRouter>
   );
