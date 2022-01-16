@@ -58,6 +58,7 @@ export const AboutMeDescription = styled.div`
 
       img {
         height: 33vh;
+        border-radius: 4px;
       }
       
     }
