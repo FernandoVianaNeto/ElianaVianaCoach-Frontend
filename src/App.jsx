@@ -10,6 +10,7 @@ import { AboutMe } from './pages/AboutMe';
 // Blog pages
 
 import { HomeBlog } from './pages/Blog/HomeBlog';
+import { IndividualText } from './pages/Blog/IndividualText';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/enviardepoimento" element={<ContactTestimony />} />
         <Route path="maissobremim" element={<AboutMe />} />
         <Route path="/bloghome" element={<HomeBlog />} />
+        <Route path="/blog/text" element={<IndividualText />} />
       </Routes>
     </BrowserRouter>
   );
