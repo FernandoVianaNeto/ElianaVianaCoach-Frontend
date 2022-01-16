@@ -62,40 +62,6 @@ export const TextsView = styled.div`
   `}
 `;
 
-export const Questions = styled.div`
-  ${({ theme }) => css`
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 1500px;
-    margin: 0 auto;
-
-    .left-column {
-      margin: 50px;
-      padding: 30px 70px;
-      max-width: 300px;
-      text-align: center;
-      background-color: ${theme.colors.primaryColor};
-      border-radius: 4px;
-
-      h1 {
-        font-family: ${theme.font.family.titleFont};
-        font-size: 50px;
-        color: ${theme.colors.fourthColor};
-      }
-    }
-
-    .right-column {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      flex: 1;
-    }
-  `}
-`;
-
 // Componentes
 
 export const ContentFirstView = styled.div`
@@ -108,16 +74,6 @@ export const ContentFirstView = styled.div`
 
 export const TextsViewGrid = styled.div`
   ${() => css`
-    max-width: 1500px;
-    margin: 0 auto;
-  `}
-`;
-
-export const QuestionGrid = styled.div`
-  ${() => css`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     max-width: 1500px;
     margin: 0 auto;
   `}
