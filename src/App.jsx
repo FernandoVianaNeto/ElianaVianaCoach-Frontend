@@ -11,6 +11,7 @@ import { AboutMe } from './pages/AboutMe';
 
 import { HomeBlog } from './pages/Blog/HomeBlog';
 import { IndividualText } from './pages/Blog/IndividualText';
+import { Login } from './pages/BackOffice/Login';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="maissobremim" element={<AboutMe />} />
         <Route path="/bloghome" element={<HomeBlog />} />
         <Route path="/blog/text" element={<IndividualText />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
