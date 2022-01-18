@@ -26,7 +26,7 @@ function App() {
         <Route path="/bloghome" element={<HomeBlog />} />
         <Route path="/blog/text" element={<IndividualText />} />
         <Route path="/blog/login" element={<Login />} />
-        <Route path="/blog/gerenciamento" element={<Management />} />
+        <Route path="/blog/gerenciamento/:id" element={<Management />} />
       </Routes>
     </BrowserRouter>
   );
