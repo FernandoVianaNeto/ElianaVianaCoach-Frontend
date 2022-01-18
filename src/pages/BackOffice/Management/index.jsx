@@ -7,7 +7,6 @@ import { TextBlogComponent } from '../../../components/TextBlogComponent';
 
 export function Management() {
   const [texts, setTexts] = useState([]);
-  console.log(texts);
 
   useEffect(() => {
     fetch(`${url.baseURL}/blogtexts`)
@@ -29,6 +28,7 @@ export function Management() {
           <button type="button">Pedidos de orçamento</button>
         </Filter>
         <Texts>
+          <h1>Todos os textos:</h1>
           {
             texts.map((text) => (
               <TextBlogComponent

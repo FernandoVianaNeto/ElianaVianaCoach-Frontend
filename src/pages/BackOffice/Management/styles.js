@@ -58,9 +58,15 @@ export const Filter = styled.div`
 `;
 
 export const Texts = styled.div`
-  ${() => css`
-    display: flex;
+  ${({ theme }) => css`
+    padding: 30px;
     height: 100vh;
+
+    h1 {
+      font-family: ${theme.font.family.titleFont};
+      font-size: 40px;
+      color: ${theme.colors.fifthColor};
+    }
   `}
 `;
 

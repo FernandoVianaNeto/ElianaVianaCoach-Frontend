@@ -1,16 +1,39 @@
 import React from 'react';
 import P from 'prop-types';
-import { Container } from './styles';
+import { AiOutlineExpandAlt, AiOutlineEdit } from 'react-icons/ai';
+import { FiTrash } from 'react-icons/fi';
+import { Container, ButtonContainer } from './styles';
 
 export function TextBlogComponent({
   title, description, date, tags,
 }) {
   return (
     <Container>
-      <p>{title}</p>
-      <p>{description}</p>
-      <p>{date}</p>
-      <p>{tags}</p>
+      <p>
+        <span>Título:</span>
+        {' '}
+        {title}
+      </p>
+      <p>
+        <span>Texto:</span>
+        {' '}
+        {description}
+      </p>
+      <p>
+        <span>Data:</span>
+        {' '}
+        {date}
+      </p>
+      <p>
+        <span>Tag:</span>
+        {' '}
+        {tags}
+      </p>
+      <ButtonContainer>
+        <AiOutlineExpandAlt />
+        <FiTrash />
+        <AiOutlineEdit />
+      </ButtonContainer>
     </Container>
   );
 }
