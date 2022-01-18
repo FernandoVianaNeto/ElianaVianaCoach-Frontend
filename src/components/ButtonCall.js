@@ -8,7 +8,7 @@ export const ButtonCall = styled.button`
     gap: 10px;
 
     font-family: ${theme.font.family.secundaryFont};
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color: ${theme.colors.primaryColor};
     background-color: ${theme.colors.fourthColor};
