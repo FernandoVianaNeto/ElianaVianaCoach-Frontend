@@ -12,6 +12,7 @@ import { AboutMe } from './pages/AboutMe';
 import { HomeBlog } from './pages/Blog/HomeBlog';
 import { IndividualText } from './pages/Blog/IndividualText';
 import { Login } from './pages/BackOffice/Login';
+import { Management } from './pages/BackOffice/Management';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         <Route path="maissobremim" element={<AboutMe />} />
         <Route path="/bloghome" element={<HomeBlog />} />
         <Route path="/blog/text" element={<IndividualText />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/blog/login" element={<Login />} />
+        <Route path="/blog/gerenciamento" element={<Management />} />
       </Routes>
     </BrowserRouter>
   );
