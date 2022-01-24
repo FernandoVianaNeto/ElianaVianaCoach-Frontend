@@ -30,24 +30,15 @@ export function Especialidades() {
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-              exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-              commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-              in vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent.
+              Olá! Você é muito bem-vindo(a) Sinto um desejo ardente em desenvolver pessoas pois acredito que o mundo será muito melhor quando as pessoas começarem a se conhecer, se mapear, enfim, se ressignificar, por isso, tenho me debruçado nos estudos do autoconhecimento e desenvolvimento humano.
+
+              Vivi uma fase muito difícil quando fui diagnosticada com um câncer de mama devastador! Hoje tudo que passei considero um case de sucesso pois consegui derrotar um gigante enorme através da minha fé! Através da Psicologia Positiva e ferramentas do Mindfulness iremos numa leve e gostosa trajetória com o objetivo de trabalhar suas emoções positivas, incorporar um mindset mais construtivo no que tange a comunicação e relacionamento intra e interpessoal.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-              exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-              commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-              in vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent.
+              Vamos juntos exercitar comportamentos novos e que sejam mais compatíveis com os resultados que precisam ser alcançados.Te convido a identificar crenças limitantes e barreiras mentais que impendem a sua evolução e criam barreiras para conquistar novos patamares em sua carreira, liderança ou família.
+
+              Nesta trajetória, uno Coaching e a Psicanálise Clínica promovendo e fortalecendo o autoconhecimento, favorecendo a definição do propósito e da missão; elementos que verdadeiramente dão sentido à nossa existência. Também te levo a potencializar seus talentos e competências, eliminando aspectos negativos da sua mentalidade e dos seus comportamentos, a ser mais positiva e, com isso, a construir melhores resultados em todos os setores da sua vida.
+
             </p>
           </div>
         </ContentFirstView>

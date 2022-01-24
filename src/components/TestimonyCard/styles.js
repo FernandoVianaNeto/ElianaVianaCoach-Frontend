@@ -10,6 +10,13 @@ export const Container = styled.div`
     font-family: ${theme.font.family.primaryFont};
     color: gray;
 
+    .children {
+      display: flex;  
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+    }
+
     .name {
       margin-top: 50px;
       text-align: center;

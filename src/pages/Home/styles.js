@@ -4,8 +4,7 @@ export const Container = styled.div`
   ${() => css`
     padding: 0;
     margin: 0;
-
-    z-index: 0;
+    z-index: -2;
 
     .background-image {
       position: absolute;
@@ -48,7 +47,7 @@ export const FirstView = styled.main`
           margin-top: 10px; 
           font-family: 'Mukta';
           /* font-family: ${theme.font.family.primaryFont}; */
-          color: ${theme.colors.primaryColor};
+          color: ${theme.colors.fifthColor};
           padding: 4px 8px;
         }
       }
@@ -97,7 +96,7 @@ export const AboutMe = styled.div`
 export const EspecialidadesMenu = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.colors.primaryColor};
-    max-height: 100vh;
+    min-height: 100vh;
     padding: 40px 50px;
 
     .title {
@@ -129,6 +128,7 @@ export const Testimonys = styled.div`
       font-size: 60px;
       color: ${theme.colors.fourthColor};
       transform: rotate(-3deg);
+      height: 200px;
     }
   `}
 `;

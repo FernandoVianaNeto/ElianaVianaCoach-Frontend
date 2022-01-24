@@ -101,6 +101,11 @@ export const ContentFirstView = styled.div`
   ${() => css`
     margin: 150px 100px;
     padding: 20px;
+
+    p {
+      text-align: justify;
+
+    }
   `}
 `;
 

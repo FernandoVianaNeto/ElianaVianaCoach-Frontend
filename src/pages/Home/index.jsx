@@ -31,7 +31,7 @@ export function Home() {
 
   return (
     <Container>
-      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643053267/pexels-fauxels-3183150_vo3fx1.jpg" alt="first view background" className="background-image" />
+      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643056822/pexels-mikhail-nilov-6893329_egby9g.jpg" alt="first view background" className="background-image" />
       <MenuContainer>
         <Menu>
           <MenuLink local="HOME" link="/" />
@@ -72,15 +72,17 @@ export function Home() {
               <h1 className="subtitle">COACH E PSICANALISTA</h1>
             </div>
             <div>
-              <p>COACH PROFISSIONAL E DE VIDA</p>
+              <p>COACH PROFISSIONAL E PSICANALISTA</p>
               <p>25 ANOS DE EXPERIÊNCIA GERENCIANDO PESSOAS</p>
-              <p>ESPECIALISTA EM ...</p>
+              <p>EXPERIÊNCIA COM BURNOUT, DEPRESSÃO E ANSIEDADE</p>
+              <p>TRABALHO O AUTOCONHECIMENTO, PROCRASTINAÇÃO E INTELIGÊNCIA EMOCIONAL</p>
+              <p>TERAPIA DE CASAL</p>
             </div>
           </div>
           <div className="image-grid">
             <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="home office" />
-            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778972/meeting_iid821.jpg" alt="meeting" />
-            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641779003/results_wvfgqw.jpg" alt="results" />
+            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643053267/pexels-fauxels-3183150_vo3fx1.jpg" alt="meeting" />
+            <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643053673/pexels-christina-morillo-1181533_nist2w.jpg" alt="results" />
           </div>
           <div className="description-grid">
             <h1>Quem é Eliana?</h1>
@@ -99,7 +101,7 @@ export function Home() {
       <EspecialidadesMenu>
         <h1 className="title">Como é o meu trabalho?</h1>
         <EspecialidadesGrid>
-          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Work">
+          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Orientação Profissional">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -109,7 +111,7 @@ export function Home() {
               {' '}
             </p>
           </WorkCard>
-          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Work">
+          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643057242/pexels-alex-green-5699482_nf87zj.jpg" imgalt="work" title="Psicanálise">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
               sed diam nonummy nibh euismod tincidunt
@@ -120,7 +122,7 @@ export function Home() {
               {' '}
             </p>
           </WorkCard>
-          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Work">
+          <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643057056/scott-graham-5fNmWej4tAA-unsplash_sczbax.jpg" imgalt="work" title="Coaching">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -137,50 +139,32 @@ export function Home() {
           <div className="left-column">
             <h1 className="title">O que meus clientes falam de mim?</h1>
             {testimony1 === true && (
-              <TestimonyCard name="Fernando">
+              <TestimonyCard name="Fran">
                 <p>
-                  Sylvie helped me see that I was heading for burnout at a
-                  breakneck pace. I needed to slow down and start taking better
-                  care of myself, because my business was paying the consequences.
-                  I couldnt focus, I had no clue what direction I was going,
-                  and I hated sitting down to work. With Sylvies guidance,
-                  I was able to create a health and wellness routine that
-                  includes me, me, and more me. I make the right food choices,
-                  get enough sleep, and move my body everyday. As a result,
-                  my business has never been better.
-                  I work hard and love every minute of it, instead of dreading work days.
+                  Eliana com sua calma, paciência e inteligência me fez ver
+                  coisas sobre mim mesma que eu nunca tinha visto.
+                  Me deu aquele “empurrãozinho” que eu precisava pra
+                  seguir meu caminho. Me fez refletir e me faz refletir
+                  sobre diversos aspectos. Uma excelente profissional!
+                  Quero continuar muitos anos com a ajuda dela em minha vida!
                 </p>
               </TestimonyCard>
             )}
             {testimony2 === true && (
-              <TestimonyCard name="Fernando1">
+              <TestimonyCard name="Belizana">
                 <p>
-                  Sylvie helped me see that I was heading for burnout at a
-                  breakneck pace. I needed to slow down and start taking better
-                  care of myself, because my business was paying the consequences.
-                  I couldnt focus, I had no clue what direction I was going,
-                  and I hated sitting down to work. With Sylvies guidance,
-                  I was able to create a health and wellness routine that
-                  includes me, me, and more me. I make the right food choices,
-                  get enough sleep, and move my body everyday. As a result,
-                  my business has never been better.
-                  I work hard and love every minute of it, instead of dreading work days.
+                  Estou em terapia com a Eliana a 3 meses e meio,
+                  foram tantas mudanças de mindset, tantas percepções!
+                  Que só posso agradecê-la por tantos aprendizados!!! RECOMENDO-A FORTEMENTE! Fale com ela!
                 </p>
               </TestimonyCard>
             )}
             {testimony3 === true && (
-              <TestimonyCard name="Fernando2">
+              <TestimonyCard name="Thayna">
                 <p>
-                  Sylvie helped me see that I was heading for burnout at a
-                  breakneck pace. I needed to slow down and start taking better
-                  care of myself, because my business was paying the consequences.
-                  I couldnt focus, I had no clue what direction I was going,
-                  and I hated sitting down to work. With Sylvies guidance,
-                  I was able to create a health and wellness routine that
-                  includes me, me, and more me. I make the right food choices,
-                  get enough sleep, and move my body everyday. As a result,
-                  my business has never been better.
-                  I work hard and love every minute of it, instead of dreading work days.
+                  Eliana tem uma energia linda de positividade e calma que
+                  nos ajuda levar a vida de uma maneira mais leve, presente
+                  e em paz. Depois de varias experiencias com outras terapias estou satisfeita com essa
                 </p>
               </TestimonyCard>
             )}
@@ -195,7 +179,6 @@ export function Home() {
           <div className="img-container">
             <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="coach" />
           </div>
-
         </TestimonyGrid>
       </Testimonys>
       <Schedule>

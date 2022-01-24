@@ -5,7 +5,7 @@ import { Container } from './styles';
 export function TestimonyCard({ children, name }) {
   return (
     <Container>
-      <p>{children}</p>
+      <p className="children">{children}</p>
       <p className="name">
         -
         {' '}
