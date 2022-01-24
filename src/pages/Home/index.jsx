@@ -31,7 +31,7 @@ export function Home() {
 
   return (
     <Container>
-      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1623179162/small_pexels_photo_3171837_bbf66f242c.jpg" alt="first view background" className="background-image" />
+      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643053267/pexels-fauxels-3183150_vo3fx1.jpg" alt="first view background" className="background-image" />
       <MenuContainer>
         <Menu>
           <MenuLink local="HOME" link="/" />

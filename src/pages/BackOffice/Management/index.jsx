@@ -37,6 +37,7 @@ export function Management() {
                 description={text.description}
                 date={text.date}
                 tags={text.tags}
+                id={text.id}
               />
             ))
           }

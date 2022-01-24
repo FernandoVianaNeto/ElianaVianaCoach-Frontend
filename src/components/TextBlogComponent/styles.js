@@ -11,7 +11,7 @@ export const Container = styled.div`
     justify-content: space-around;
 
     font-family: ${theme.font.family.primaryFont};
-    
+    border-radius: 4px;
 
     p {
       display: flex;
