@@ -25,5 +25,11 @@ export const Container = styled.div`
       font-weight: bold;
       font-size: 18px;
     }
+
+    @media ${theme.media.lteMedium} {
+      img {
+        max-width: 300px;
+      }
+    }
   `}
 `;

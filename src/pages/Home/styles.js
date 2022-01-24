@@ -46,7 +46,6 @@ export const FirstView = styled.main`
           justify-content: flex-end;
           margin-top: 10px; 
           font-family: 'Mukta';
-          /* font-family: ${theme.font.family.primaryFont}; */
           color: ${theme.colors.fifthColor};
           padding: 4px 8px;
         }
@@ -59,6 +58,18 @@ export const FirstView = styled.main`
 
         a {
           font-size: 20px;
+        }
+      }
+
+      @media ${theme.media.lteMedium} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          width: 100%;
+          text-align: right;
         }
       }
     }
@@ -151,6 +162,10 @@ export const Schedule = styled.div`
       color: ${theme.colors.fourthColor};
       font-family: ${theme.font.family.secondaryFont};
     }
+
+    @media ${theme.media.lteMedium} {
+      display: none;
+    }
   `}
 `;
 
@@ -235,11 +250,28 @@ export const ThreeGridTemplate = styled.div`
         transform: rotate(-3deg);
       }
     }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        display: none;
+      }
+
+      .description-grid {
+        p {
+          padding-bottom: 60px;
+        }
+      }
+    }
   `}
 `;
 
 export const EspecialidadesGrid = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     max-width: 1500px;
     margin: 0 auto;
     display: grid;
@@ -247,6 +279,12 @@ export const EspecialidadesGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     height: 100%;
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
   `}
 `;
 
@@ -285,6 +323,28 @@ export const TestimonyGrid = styled.div`
           font-size: 18px;
           color: ${theme.colors.fifthColor};
         }
+      }
+    }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+
+      .left-column {
+        padding: 0px;
+      }
+
+      .title {
+        padding: 20px;
+      }
+
+      img {
+        display: none;
+      }
+
+      .button-container {
+        margin-bottom: 20px;
       }
     }
   `}

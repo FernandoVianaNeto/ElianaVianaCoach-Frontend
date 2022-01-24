@@ -16,7 +16,9 @@ export const theme = {
       logoFont: "'The Nautigal', cursive",
       titleFont: "'Licorice', cursive",
       subtitleFont: "'Open Sans Condensed', sans-serif",
-
     },
+  },
+  media: {
+    lteMedium: '(max-width: 768px)',
   },
 };

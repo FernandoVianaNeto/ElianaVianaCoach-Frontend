@@ -11,6 +11,10 @@ export const Container = styled.div`
 
     max-width: 1500px;
     margin: 0 auto;
+
+    @media ${theme.media.lteMedium} {
+      display: none;
+    }
   `}  
 `;
 
