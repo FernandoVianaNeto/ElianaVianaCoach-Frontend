@@ -8,6 +8,9 @@ export const Container = styled.div`
     padding: 8px 16px;
     background-color: ${theme.colors.fifthColor};
     border-radius: 4px;
+
+    max-width: 1500px;
+    margin: 0 auto;
   `}  
 `;
 
