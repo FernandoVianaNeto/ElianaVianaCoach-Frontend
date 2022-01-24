@@ -182,9 +182,13 @@ export function Home() {
         </TestimonyGrid>
       </Testimonys>
       <Schedule>
-        <h3>Sua vida não está da forma como gostaria?</h3>
-        <h1 className="title">Venha conversar comigo</h1>
-        <ButtonLink>Buscar ajuda</ButtonLink>
+        <div className="content">
+          <h3>Sua vida não está da forma como gostaria?</h3>
+          <h1 className="title">Venha conversar comigo</h1>
+          <div className="button-container">
+            <ButtonLink href="/contato">Buscar ajuda</ButtonLink>
+          </div>
+        </div>
       </Schedule>
     </Container>
   );

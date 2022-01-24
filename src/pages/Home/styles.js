@@ -147,24 +147,44 @@ export const Testimonys = styled.div`
 export const Schedule = styled.div`
   ${({ theme }) => css`
     height: 50vh;
-    background-color: ${theme.colors.fifthColor};
+    background-color: ${theme.colors.secundaryColor};
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      gap: 20px;
+      background-color: ${theme.colors.primaryColor};
+      padding: 50px;
+      border-radius: 4px;
+
+      .button-container {
+        margin: 0 auto;
+      }
+    }
+
     h3 {
-      color: ${theme.colors.complementarColor};
+      color: ${theme.colors.fourthColor};
       font-family: ${theme.font.family.secondaryFont};
     }
 
     .title {
       color: ${theme.colors.fourthColor};
-      font-family: ${theme.font.family.secondaryFont};
+      font-family: ${theme.font.family.titleFont};
+      font-size: 44px;
     }
 
     @media ${theme.media.lteMedium} {
-      display: none;
+      display: flex;
+      flex-direction: column;
+
+      .content {
+        text-align: center;
+      }
     }
   `}
 `;
