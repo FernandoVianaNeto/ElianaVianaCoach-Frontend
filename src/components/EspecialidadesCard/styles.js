@@ -40,5 +40,15 @@ export const Container = styled.div`
         text-align: right;
       }
     }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+
+      img {
+        max-width: 300px
+      }
+    }
   `}
 `;

@@ -16,7 +16,6 @@ export const Container = styled.div`
 
 export const FirstView = styled.div`
   ${({ theme }) => css`
-    min-height: 60vh;
     width: 100%;
     margin: 0 auto;
 
@@ -99,7 +98,7 @@ export const Questions = styled.div`
 
 export const ContentFirstView = styled.div`
   ${() => css`
-    margin: 150px 100px;
+    margin: 0px 100px;
     padding: 20px;
 
     p {
