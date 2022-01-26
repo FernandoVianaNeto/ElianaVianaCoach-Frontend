@@ -37,7 +37,7 @@ export const Container = styled.div`
 
       .button-container {
         margin-top: 50px;
-        width: 100%;
+
         text-align: right;
       }
     }
@@ -45,7 +45,6 @@ export const Container = styled.div`
     @media ${theme.media.lteMedium} {
       display: flex;
       flex-direction: column;
-      width: 100%;
 
       .column {
         margin: 20px;
