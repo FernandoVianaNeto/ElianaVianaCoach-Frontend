@@ -60,17 +60,30 @@ export const FirstView = styled.main`
           font-size: 20px;
         }
       }
+    }
 
-      @media ${theme.media.lteMedium} {
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0px;
+      text-align: center;
+
+      .call-text {
+        text-align: center;
+      }
+
+      h1 {
+        width: 100%;
+        text-align: center;
+        color: ${theme.colors.fourthColor};
+      }
+
+      .column-left {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        h1 {
-          width: 100%;
-          text-align: right;
-        }
+        padding: 0px;
+        margin: 0px;
+        height: 600px;
       }
     }
   `}
