@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     height: 100vh;
+    
 
     .img-background {
       position: absolute;
@@ -10,6 +11,13 @@ export const Container = styled.div`
       opacity: 0.3;
       width: 100%;
       max-height: 100%;
+    }
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100vw;
+      img {
+        display: none;
+      }
     }
   `}
 `;
@@ -46,6 +54,11 @@ export const FirstView = styled.div`
       margin: 70px;
 
       font-family: ${theme.font.family.primaryFont};
+    }
+
+    @media ${theme.media.lteMedium} {
+      margin: 0px;
+      padding: 0px;
     }
   `}
 `;
@@ -91,19 +104,44 @@ export const Questions = styled.div`
       gap: 20px;
       flex: 1;
     }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+
+      .left-column {
+        padding: 10px 0px;
+      }
+    }
   `}
 `;
 
 // Componentes
 
 export const ContentFirstView = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     margin: 0px 100px;
     padding: 20px;
 
     p {
       text-align: justify;
+    }
 
+    @media ${theme.media.lteMedium} {
+      margin: 0px;
+      padding: 0px;
+
+      .title {
+        text-align: center;
+        margin: 50px;
+      }
+
+      .description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
     }
   `}
 `;

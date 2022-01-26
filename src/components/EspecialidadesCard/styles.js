@@ -9,6 +9,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     font-family: ${theme.font.family.primaryFont};
     ${invert && invertBackground};
 
@@ -44,7 +45,11 @@ export const Container = styled.div`
     @media ${theme.media.lteMedium} {
       display: flex;
       flex-direction: column;
-      max-width: 100%;
+      width: 100%;
+
+      .column {
+        margin: 20px;
+      }
 
       img {
         max-width: 300px

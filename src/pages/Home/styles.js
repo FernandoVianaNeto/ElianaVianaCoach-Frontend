@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
+  width: 100vw;
     padding: 0;
     margin: 0;
     z-index: -2;
@@ -11,6 +12,10 @@ export const Container = styled.div`
       z-index: -1;
       height: 100vh;
       width: 100%;
+    }
+
+    @media ${theme.media.lteMedium} {
+      width: 100vw;
     }
   `}
 `;

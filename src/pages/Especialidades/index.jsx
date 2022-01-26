@@ -38,7 +38,6 @@ export function Especialidades() {
               Vamos juntos exercitar comportamentos novos e que sejam mais compatíveis com os resultados que precisam ser alcançados.Te convido a identificar crenças limitantes e barreiras mentais que impendem a sua evolução e criam barreiras para conquistar novos patamares em sua carreira, liderança ou família.
 
               Nesta trajetória, uno Coaching e a Psicanálise Clínica promovendo e fortalecendo o autoconhecimento, favorecendo a definição do propósito e da missão; elementos que verdadeiramente dão sentido à nossa existência. Também te levo a potencializar seus talentos e competências, eliminando aspectos negativos da sua mentalidade e dos seus comportamentos, a ser mais positiva e, com isso, a construir melhores resultados em todos os setores da sua vida.
-
             </p>
           </div>
         </ContentFirstView>
