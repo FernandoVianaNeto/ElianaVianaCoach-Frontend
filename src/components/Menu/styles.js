@@ -12,8 +12,34 @@ export const Container = styled.div`
     max-width: 1500px;
     margin: 0 auto;
 
+    .show-option {
+      visibility: hidden;
+      position: absolute;
+    }
+
     @media ${theme.media.lteMedium} {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: ${theme.colors.fifthColor};
+      height: 100vh;
+      position: fixed;
+      padding: 0px;
+      margin: 0px;
+      z-index: 200;
+
+      .show-option {
+        background-color: transparent;
+        color: ${theme.colors.fourthColor};
+        visibility: visible;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        border: none;
+        font-size: 30px;
+      }
     }
   `}  
 `;
@@ -42,6 +68,12 @@ export const LogoContainer = styled.div`
       font-family: ${theme.font.family.primaryFont};
       color: ${theme.colors.primaryColor};
     }
+
+    @media ${theme.media.lteMedium} {
+      h2 {
+        font-size: 50px;
+      }
+    }
   `}  
 `;
 
@@ -65,6 +97,7 @@ export const ButtonsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease-in-out all 300ms;
 
     .social-media-container {
       display: flex;
@@ -79,6 +112,12 @@ export const ButtonsContainer = styled.div`
         align-items: center;
         justify-content: center;
       }
+    }
+
+    @media ${theme.media.lteMedium} {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
     }
   `}  
 `;

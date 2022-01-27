@@ -7,8 +7,13 @@ export const Container = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     padding: 20px 100px;
+
+    @media ${theme.media.lteMedium} {
+      padding: 0px;
+      
+    }
   `}
 `;
 
