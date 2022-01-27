@@ -4,6 +4,9 @@ export const Container = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
     background-color: ${theme.colors.primaryColor};
+    max-width: 100vw;
+    margin: 0px;
+    padding: 0px;
   `}
 `;
 
@@ -36,6 +39,11 @@ export const MainContent = styled.main`
         color: ${theme.colors.fourthColor};
       }
     }
+
+    @media ${theme.media.lteMedium} {
+      margin: 0px;
+      padding: 0px;
+    }
   `}
 `;
 
@@ -55,22 +63,8 @@ export const AboutMeDescription = styled.div`
 // Elementos
 
 export const MainContentGrid = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     display: flex;
     padding: 50px;
-
-    .image-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 400px;
-        height: 300px;
-        box-shadow: 0 0 2em ${theme.colors.primaryColor};
-        border-radius: 4px;
-      }
-    }
   `}
 `;
