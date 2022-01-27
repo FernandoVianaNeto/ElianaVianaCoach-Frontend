@@ -44,41 +44,11 @@ export const AboutMeDescription = styled.div`
     min-height: 100vh;
     background-color: ${theme.colors.secundaryColor};
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 50px;
     padding: 50px;
 
-    .img-grid {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-
-      img {
-        height: 33vh;
-        border-radius: 4px;
-      }
-      
-    }
-
-    .text-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-
-      flex: 1;
-      padding: 50px 0px;
-      font-family: ${theme.font.family.primaryFont};
-
-      h1 {
-        font-family: ${theme.font.family.titleFont};
-        font-size: 35px;
-        color: ${theme.colors.fourthColor};
-      }
-    }
   `}
 `;
 

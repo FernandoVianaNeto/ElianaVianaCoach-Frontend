@@ -6,7 +6,7 @@ export const Container = styled.div`
     align-items: center;
     gap: 50px;
     padding: 50px;
-
+    max-width: 100vw;
 
     img {
       height: 33vh;
@@ -25,6 +25,7 @@ export const Container = styled.div`
 
       p {
         text-align: justify;
+        margin-top: 20px;
       }
 
       h1 {
@@ -32,6 +33,16 @@ export const Container = styled.div`
         font-family: ${theme.font.family.titleFont};
         font-size: 35px;
         color: ${theme.colors.fourthColor};
+      }
+    }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+
+      img {
+        max-width: 300px;
       }
     }
   `}
