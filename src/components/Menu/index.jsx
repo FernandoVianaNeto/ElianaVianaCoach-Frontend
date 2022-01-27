@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import P from 'prop-types';
 import {
   AiFillInstagram, AiFillFacebook, AiOutlineWhatsApp, AiOutlineMenu, AiOutlineClose,
@@ -12,6 +12,12 @@ import { ButtonLink } from '../ButtonLink';
 
 export function Menu({ children }) {
   const [expansed, setExpansed] = useState(true);
+
+  useEffect(() => {
+    if (window.screen.width <= 768) {
+      setExpansed(false);
+    }
+  }, []);
 
   return (
     <Container>
