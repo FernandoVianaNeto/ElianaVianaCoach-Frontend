@@ -16,8 +16,10 @@ export function Menu({ children }) {
   useEffect(() => {
     if (window.screen.width <= 768) {
       setExpansed(false);
+    } else {
+      setExpansed(true);
     }
-  }, []);
+  }, [window.screen.width]);
 
   return (
     <Container>
