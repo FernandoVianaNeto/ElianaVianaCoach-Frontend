@@ -11,7 +11,7 @@ import { MenuLink } from '../MenuLink';
 import { ButtonLink } from '../ButtonLink';
 
 export function Menu({ children }) {
-  const [expansed, setExpansed] = useState(true);
+  const [expansed, setExpansed] = useState(false);
 
   useEffect(() => {
     if (window.screen.width <= 768) {
