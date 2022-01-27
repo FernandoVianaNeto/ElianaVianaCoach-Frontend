@@ -22,7 +22,7 @@ function App() {
         <Route path="/especialidades" element={<Especialidades />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/enviardepoimento" element={<ContactTestimony />} />
-        <Route path="maissobremim" element={<AboutMe />} />
+        <Route path="/maissobremim" element={<AboutMe />} />
         <Route path="/bloghome" element={<HomeBlog />} />
         <Route path="/blog/text" element={<IndividualText />} />
         <Route path="/blog/login" element={<Login />} />

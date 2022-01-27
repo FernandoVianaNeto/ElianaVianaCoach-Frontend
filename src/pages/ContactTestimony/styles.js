@@ -80,5 +80,12 @@ export const MainContentGrid = styled.div`
         gap: 10px;
       }
     }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      margin-top: 0px;
+    }
   `}
 `;
