@@ -64,7 +64,6 @@ export const AboutMeDescription = styled.div`
 
 export const MainContentGrid = styled.div`
   ${() => css`
-    display: flex;
     padding: 50px;
   `}
 `;
