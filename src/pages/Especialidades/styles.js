@@ -9,12 +9,13 @@ export const Container = styled.div`
       z-index: -1;
       opacity: 0.3;
       width: 100%;
-      max-height: 100%;
+      height: 100vh;
     }
 
     @media ${theme.media.lteMedium} {
       max-width: 100vw;
-      img {
+
+      .img-background {
         display: none;
       }
     }
@@ -24,6 +25,7 @@ export const Container = styled.div`
 export const FirstView = styled.div`
   ${({ theme }) => css`
     margin: 0 auto;
+    min-height: 100vh;
 
     .title {
       display: flex;
@@ -118,8 +120,12 @@ export const Questions = styled.div`
 
 export const ContentFirstView = styled.div`
   ${({ theme }) => css`
-    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
+    height: 100%;
 
     p {
       text-align: justify;
@@ -145,9 +151,15 @@ export const ContentFirstView = styled.div`
 `;
 
 export const EspecialidadesGrid = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     max-width: 1500px;
     margin: 0 auto;
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
   `}
 `;
 
