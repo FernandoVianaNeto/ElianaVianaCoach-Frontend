@@ -21,7 +21,7 @@ export const MainContentGrid = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin: 100px 0px;
 
     .title {
       transform: rotate(-2deg);
