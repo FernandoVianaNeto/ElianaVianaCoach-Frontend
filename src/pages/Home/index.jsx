@@ -3,8 +3,9 @@ import { RiFootprintFill } from 'react-icons/ri';
 import { GrLinkNext } from 'react-icons/gr';
 import { Menu } from '../../components/Menu';
 import { MenuLink } from '../../components/MenuLink';
+import { MenuContainer } from '../../components/Base';
 import {
-  Container, FirstView, AboutMe, ThreeGridTemplate, MenuContainer, EspecialidadesMenu,
+  Container, FirstView, AboutMe, ThreeGridTemplate, EspecialidadesMenu,
   EspecialidadesGrid, Testimonys, TestimonyGrid, Schedule,
 } from './styles';
 import { WorkCard } from '../../components/WorkCard';

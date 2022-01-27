@@ -20,12 +20,6 @@ export const Container = styled.div`
   `}
 `;
 
-export const MenuContainer = styled.div`
-  ${() => css`
-    padding: 20px 100px;
-  `}
-`;
-
 // Styles das subpages
 
 export const FirstView = styled.main`
