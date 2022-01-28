@@ -89,12 +89,58 @@ export const ContentFirstView = styled.div`
 `;
 
 export const TextsViewGrid = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     max-width: 1500px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    h1 {
+      font-family: ${theme.font.family.titleFont};
+      font-size: 50px;
+      color: ${theme.colors.fourthColor};
+    }
+  `}
+`;
+
+export const MoreTexts = styled.div`
+  ${() => css`
+
+  `}
+`;
+
+export const SearchBox = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    form {
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 40px;
+        background-color: ${theme.colors.primaryColor};
+        border: 1px solid ${theme.colors.secundaryColor};
+        border-radius: 4px;
+        color: ${theme.colors.fifthColor};
+      }
+    }
+
+    @media ${theme.media.lteMedium} {
+      form {
+        width: 100%;
+      }
+    }
   `}
 `;

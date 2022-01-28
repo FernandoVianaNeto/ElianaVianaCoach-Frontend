@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 // import P from 'prop-types';
+import { BsSearch } from 'react-icons/bs';
 import {
   Container, FirstView, TextsView, ContentFirstView,
-  TextsViewGrid,
+  TextsViewGrid, MoreTexts, SearchBox,
 } from './styles';
 import { MenuContainer } from '../../../components/Base';
 import { Menu } from '../../../components/Menu';
 import { MenuLink } from '../../../components/MenuLink';
 import { EspecialidadesCard } from '../../../components/EspecialidadesCard';
+import { Input } from '../../../components/Input';
 
 export function HomeBlog() {
   const [responsive, setResponsive] = useState(false);
@@ -45,7 +47,18 @@ export function HomeBlog() {
         </ContentFirstView>
       </FirstView>
       <TextsView>
+        <SearchBox>
+          <form action="">
+            <Input
+              placeholder="Procurar texto"
+            />
+            <button type="submit">
+              <BsSearch />
+            </button>
+          </form>
+        </SearchBox>
         <TextsViewGrid>
+          <h1>Principais lançamentos</h1>
           <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
@@ -74,6 +87,7 @@ export function HomeBlog() {
             others first.
           </EspecialidadesCard>
         </TextsViewGrid>
+        <MoreTexts />
       </TextsView>
     </Container>
   );
