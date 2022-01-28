@@ -32,7 +32,7 @@ export function Home() {
 
   return (
     <Container>
-      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643056822/pexels-mikhail-nilov-6893329_egby9g.jpg" alt="first view background" className="background-image" />
+      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643371748/pexels-belle-co-1000445_sfq2fr.jpg" alt="first view background" className="background-image" />
       <MenuContainer>
         <Menu>
           <MenuLink local="HOME" link="/" />
@@ -75,6 +75,7 @@ export function Home() {
             <div>
               <p>COACH PROFISSIONAL E PSICANALISTA</p>
               <p>25 ANOS DE EXPERIÊNCIA GERENCIANDO PESSOAS</p>
+              <p>MAIS DE 100 PACIENTES</p>
               <p>EXPERIÊNCIA COM BURNOUT, DEPRESSÃO E ANSIEDADE</p>
               <p>TRABALHO O AUTOCONHECIMENTO, PROCRASTINAÇÃO E INTELIGÊNCIA EMOCIONAL</p>
               <p>TERAPIA DE CASAL</p>

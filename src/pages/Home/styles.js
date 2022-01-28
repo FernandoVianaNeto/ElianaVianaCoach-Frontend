@@ -25,6 +25,8 @@ export const Container = styled.div`
 export const FirstView = styled.main`
   ${({ theme }) => css`
     min-height: 80vh;
+    max-width: 1500px;
+    margin: 0 auto;
 
     .column-left {
       display: flex; 
@@ -45,7 +47,7 @@ export const FirstView = styled.main`
           justify-content: flex-end;
           margin-top: 10px; 
           font-family: 'Mukta';
-          color: ${theme.colors.fifthColor};
+          color: ${theme.colors.primaryColor};
           padding: 4px 8px;
         }
       }

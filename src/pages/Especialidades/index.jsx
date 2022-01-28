@@ -87,6 +87,9 @@ export function Especialidades() {
         </div>
         <div className="right-column">
           <Input
+            placeholder="Qual a seu e-mail?"
+          />
+          <Input
             placeholder="Qual a sua dúvida?"
           />
           <ButtonCall type="submit">Enviar</ButtonCall>
