@@ -46,8 +46,9 @@ export const Container = styled.div`
       max-width: 100vw;
       display: flex;
       flex-direction: column;
-      padding: 0px;
+      padding: 20px 0px;
       margin: 0px;
+      border-radius: 4px;
       
       .column {
         margin: 20px;

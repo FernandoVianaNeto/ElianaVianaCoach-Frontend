@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     height: 100vh;
 
     .img-background {
@@ -10,6 +10,12 @@ export const Container = styled.div`
       opacity: 0.3;
       width: 100%;
       max-height: 100%;
+    }
+
+    @media ${theme.media.lteMedium} {
+      .img-background {
+        display: none;
+      }
     }
   `}
 `;
@@ -65,10 +71,20 @@ export const TextsView = styled.div`
 // Componentes
 
 export const ContentFirstView = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     margin: 150px 100px;
     padding: 20px;
     text-align: center;
+
+    @media ${theme.media.lteMedium} {
+      margin: 0px;
+      padding: 0px;
+      height: 80vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   `}
 `;
 
@@ -76,5 +92,9 @@ export const TextsViewGrid = styled.div`
   ${() => css`
     max-width: 1500px;
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   `}
 `;

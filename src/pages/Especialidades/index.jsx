@@ -52,7 +52,7 @@ export function Especialidades() {
       </FirstView>
       <EspecialidadesComponents>
         <EspecialidadesGrid>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
+          <EspecialidadesCard title="Orientação Profissional" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor
@@ -61,7 +61,7 @@ export function Especialidades() {
             routine, and manage your mind around people-pleasing and putting
             others first.
           </EspecialidadesCard>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert={responsiveCard} button>
+          <EspecialidadesCard title="Psicanálise" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert={responsiveCard} button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor
@@ -70,7 +70,7 @@ export function Especialidades() {
             routine, and manage your mind around people-pleasing and putting
             others first.
           </EspecialidadesCard>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
+          <EspecialidadesCard title="Coaching" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor

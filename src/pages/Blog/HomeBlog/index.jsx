@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import P from 'prop-types';
 import {
   Container, FirstView, TextsView, ContentFirstView,
@@ -10,17 +10,27 @@ import { MenuLink } from '../../../components/MenuLink';
 import { EspecialidadesCard } from '../../../components/EspecialidadesCard';
 
 export function HomeBlog() {
+  const [responsive, setResponsive] = useState(false);
+
+  useEffect(() => {
+    if (window.screen.width <= 768) {
+      setResponsive(true);
+    } else {
+      setResponsive(false);
+    }
+  }, []);
+
   return (
     <Container>
+      <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="fundo" className="img-background" />
+      <MenuContainer>
+        <Menu>
+          <MenuLink local="HOME" link="/" />
+          <MenuLink local="SOBRE MIM" link="/" />
+          <MenuLink local="ESPECIALIDADES" link="/especialidades" />
+        </Menu>
+      </MenuContainer>
       <FirstView>
-        <img src="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" alt="fundo" className="img-background" />
-        <MenuContainer>
-          <Menu>
-            <MenuLink local="HOME" link="/" />
-            <MenuLink local="SOBRE MIM" link="/" />
-            <MenuLink local="ESPECIALIDADES" link="/especialidades" />
-          </Menu>
-        </MenuContainer>
         <ContentFirstView>
           <div className="title">
             <h1>
@@ -45,7 +55,7 @@ export function HomeBlog() {
             routine, and manage your mind around people-pleasing and putting
             others first.
           </EspecialidadesCard>
-          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" button>
+          <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert={responsive} button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
             In order to break your bad habits, you need a mentor
