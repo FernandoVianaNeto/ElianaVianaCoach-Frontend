@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    width: 100vw;
     padding: 0;
     margin: 0;
     z-index: -2;

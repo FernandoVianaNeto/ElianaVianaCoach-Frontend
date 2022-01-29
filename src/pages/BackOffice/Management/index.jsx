@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Container, Aside, Section, Filter, Texts,
+  Container, Section, Filter, Texts,
 } from './styles';
 import url from '../../../baseURL.json';
 import { TextBlogComponent } from '../../../components/TextBlogComponent';
@@ -18,9 +18,6 @@ export function Management() {
 
   return (
     <Container>
-      <Aside>
-        <h1>Gerenciamento</h1>
-      </Aside>
       <Section>
         <Filter>
           <button type="button">Textos</button>

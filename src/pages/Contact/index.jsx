@@ -11,6 +11,7 @@ import { Form } from '../../components/Form';
 import { Input } from '../../components/Input';
 import { TextArea } from '../../components/TextArea';
 import { Button } from '../../components/Button';
+import urlConfig from '../../baseURL.json';
 
 export function Contact() {
   return (
@@ -27,7 +28,7 @@ export function Contact() {
           <div className="left-column">
             <h1>Fale com Eliana</h1>
             <p className="subtitle">Agende sua sessão ou sinta se a vontade para me contatar com qualquer dúvida que tenha surgido.</p>
-            <Form>
+            <Form action={`${urlConfig.baseURL}/solicitarorcamento`} method="POST">
               <Input placeholder="Seu nome" />
               <Input placeholder="Seu e-mail" />
               <TextArea placeholder="Mensagem" />

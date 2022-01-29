@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import {
   Container, FirstView, TextsView, ContentFirstView,
-  TextsViewGrid, MoreTexts, SearchBox,
+  TextsViewGrid, SearchBox,
 } from './styles';
 import { MenuContainer } from '../../../components/Base';
 import { Menu } from '../../../components/Menu';
@@ -48,6 +48,7 @@ export function HomeBlog() {
       </FirstView>
       <TextsView>
         <SearchBox>
+          <h1>Principais lançamentos</h1>
           <form action="">
             <Input
               placeholder="Procurar texto"
@@ -58,7 +59,6 @@ export function HomeBlog() {
           </form>
         </SearchBox>
         <TextsViewGrid>
-          <h1>Principais lançamentos</h1>
           <EspecialidadesCard title="Exemplo1" subtitle="subtitulo de exemplo" buttontext="Ver mais" imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" invert button>
             The quickest path to burnout as an entrepreneur is working
             all the time and not taking care of yourself.
@@ -87,7 +87,6 @@ export function HomeBlog() {
             others first.
           </EspecialidadesCard>
         </TextsViewGrid>
-        <MoreTexts />
       </TextsView>
     </Container>
   );

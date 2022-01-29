@@ -73,7 +73,7 @@ export function Home() {
               <h1 className="subtitle">PSICANALISTA E COACH</h1>
             </div>
             <div>
-              <p>25 ANOS DE EXPERIÊNCIA GERENCIANDO PESSOAS</p>
+              <p>25 ANOS DE EXPERIÊNCIA DESENVOLVENDO PESSOAS</p>
               <p>MAIS 5 MIL HORAS DE ATENDIMENTO</p>
               <p>EXPERIÊNCIA COM BURNOUT, DEPRESSÃO E ANSIEDADE</p>
               <p>TRABALHO O AUTOCONHECIMENTO, PROCRASTINAÇÃO E INTELIGÊNCIA EMOCIONAL</p>
@@ -89,7 +89,7 @@ export function Home() {
           <div className="description-grid">
             <h1>Quem é Eliana?</h1>
             <p>
-              Graduada em Administração, MBA em Liderança e Coach ,
+              Mulher, empreendedora, graduada em Administração, MBA em Liderança e Coach ,
               25 anos de experiência em liderança, desenvolvimento
               humano, gestão de pessoas.
               Me proponho a ajudar você a mergulhar no autoconhecimento,

@@ -28,5 +28,16 @@ export const Form = styled.form`
       font-size: 46px;
       color: ${theme.colors.primaryColor};
     }
+
+    button {
+      padding: 10px 20px;
+      background-color: ${theme.colors.fourthColor};
+      color: ${theme.colors.primaryColor};
+      font-family: ${theme.font.family.primaryFont};
+      font-size: 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   `}
 `;

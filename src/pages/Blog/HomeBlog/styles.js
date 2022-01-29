@@ -89,19 +89,13 @@ export const ContentFirstView = styled.div`
 `;
 
 export const TextsViewGrid = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     max-width: 1500px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-    h1 {
-      font-family: ${theme.font.family.titleFont};
-      font-size: 50px;
-      color: ${theme.colors.fourthColor};
-    }
   `}
 `;
 
@@ -115,7 +109,13 @@ export const SearchBox = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
+
+    h1 {
+      font-family: ${theme.font.family.titleFont};
+      font-size: 50px;
+      color: ${theme.colors.fourthColor};
+    }
 
     form {
       max-width: 600px;
