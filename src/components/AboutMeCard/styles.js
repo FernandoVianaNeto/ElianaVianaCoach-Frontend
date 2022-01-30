@@ -44,7 +44,7 @@ export const Container = styled.div`
     @media ${theme.media.lteMedium} {
       display: flex;
       flex-direction: column;
-      padding: 0px;
+      padding: 10px;
 
       img {
         max-width: 300px;

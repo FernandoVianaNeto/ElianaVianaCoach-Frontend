@@ -61,7 +61,14 @@ export const AboutMeDescription = styled.div`
 // Elementos
 
 export const MainContentGrid = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     padding: 50px;
+    @media ${theme.media.lteMedium} {
+      width: 100vw;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   `}
 `;
