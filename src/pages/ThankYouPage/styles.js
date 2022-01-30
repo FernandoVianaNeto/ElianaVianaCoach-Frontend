@@ -25,6 +25,11 @@ export const Container = styled.div`
     h3 {
       color: ${theme.colors.secundaryColor};
     }
+
+    @media ${theme.media.lteMedium} {
+      padding: 30px;
+      text-align: center;
+    }
   `}
 `;
 
