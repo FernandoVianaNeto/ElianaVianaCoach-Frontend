@@ -1,13 +1,17 @@
 import styled, { css } from 'styled-components';
 
+const invertBackground = ({ theme }) => css`
+  background-color: ${theme.colors.primaryColor};
+`;
+
 export const Container = styled.div`
-  ${({ theme }) => css`
+  ${({ theme, invert }) => css`
     display: flex;
     align-items: center;
     gap: 50px;
     padding: 50px;
     max-width: 100vw;
-
+    ${invert && invertBackground}
     img {
       height: 33vh;
       border-radius: 4px;

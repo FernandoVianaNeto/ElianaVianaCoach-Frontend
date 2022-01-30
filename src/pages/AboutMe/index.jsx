@@ -42,7 +42,7 @@ export function AboutMe() {
           routine, and manage your mind around people-pleasing and putting
           others first.
         </AboutMeCard>
-        <AboutMeCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" title="Minha trajetória">
+        <AboutMeCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" title="Minha trajetória" invert>
           The quickest path to burnout as an entrepreneur is working
           all the time and not taking care of yourself.
           In order to break your bad habits, you need a mentor

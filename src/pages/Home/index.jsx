@@ -36,7 +36,7 @@ export function Home() {
       <MenuContainer>
         <Menu>
           <MenuLink local="HOME" link="/" />
-          <MenuLink local="SOBRE MIM" link="/" />
+          <MenuLink local="SOBRE MIM" link="/maissobremim" />
           <MenuLink local="ESPECIALIDADES" link="/especialidades" />
         </Menu>
       </MenuContainer>
