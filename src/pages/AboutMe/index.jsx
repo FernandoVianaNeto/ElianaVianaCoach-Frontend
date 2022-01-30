@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Container, MainContent, MainContentGrid, AboutMeDescription,
 } from './styles';
@@ -9,6 +9,16 @@ import { MenuLink } from '../../components/MenuLink';
 import { AboutMeCard } from '../../components/AboutMeCard';
 
 export function AboutMe() {
+  const [noResponsiveCard, setNoResponsiveCard] = useState(true);
+
+  useEffect(() => {
+    if (window.screen.width <= 768) {
+      setNoResponsiveCard(false);
+    } else {
+      setNoResponsiveCard(true);
+    }
+  }, []);
+
   return (
     <Container>
       <MenuContainer>
@@ -42,7 +52,7 @@ export function AboutMe() {
           routine, and manage your mind around people-pleasing and putting
           others first.
         </AboutMeCard>
-        <AboutMeCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" title="Minha trajetória" invert>
+        <AboutMeCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" title="Minha trajetória" invert={noResponsiveCard}>
           The quickest path to burnout as an entrepreneur is working
           all the time and not taking care of yourself.
           In order to break your bad habits, you need a mentor

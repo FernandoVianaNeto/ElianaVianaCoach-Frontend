@@ -11,6 +11,7 @@ export const Container = styled.div`
     gap: 50px;
     padding: 50px;
     max-width: 100vw;
+    background-color: ${theme.colors.secundaryColor};
     ${invert && invertBackground}
     img {
       height: 33vh;

@@ -48,14 +48,12 @@ export const MainContent = styled.main`
 `;
 
 export const AboutMeDescription = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     min-height: 100vh;
-    background-color: ${theme.colors.secundaryColor};
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
-    padding: 50px;
 
   `}
 `;
