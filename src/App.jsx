@@ -6,6 +6,7 @@ import { Especialidades } from './pages/Especialidades';
 import { Contact } from './pages/Contact';
 import { ContactTestimony } from './pages/ContactTestimony';
 import { AboutMe } from './pages/AboutMe';
+import { ThankYouPage } from './pages/ThankYouPage';
 
 // Blog pages
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/blog/text" element={<IndividualText />} />
         <Route path="/blog/login" element={<Login />} />
         <Route path="/blog/gerenciamento/:id" element={<Management />} />
+        <Route path="/agradecimento" element={<ThankYouPage />} />
       </Routes>
     </BrowserRouter>
   );
