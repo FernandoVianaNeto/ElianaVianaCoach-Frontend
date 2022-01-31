@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import {
   Container, Section, Filter, Texts,
 } from './styles';
@@ -7,6 +8,14 @@ import { TextBlogComponent } from '../../../components/TextBlogComponent';
 
 export function Management() {
   const [texts, setTexts] = useState([]);
+  const { token } = useParams();
+  console.log(token);
+
+  useEffect(() => {
+    fetch(`${url.baseURL}/constantauthentication/${token}`, {
+      method: 'POST',
+    });
+  }, []);
 
   useEffect(() => {
     fetch(`${url.baseURL}/blogtexts`)
