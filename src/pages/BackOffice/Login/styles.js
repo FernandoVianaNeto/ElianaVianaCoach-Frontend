@@ -23,6 +23,11 @@ export const Form = styled.form`
     gap: 20px;
     border-radius: 4px;
 
+    small {
+      font-family: ${theme.font.family.primaryFont};
+      color: red;
+    }
+
     h1 {
       font-family: ${theme.font.family.titleFont};
       font-size: 46px;
