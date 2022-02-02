@@ -19,6 +19,7 @@ export const Container = styled.div`
       font-family: ${theme.font.family.primaryFont};
       font-size: 15px;
       color: ${theme.colors.primaryColor};
+      cursor: pointer;
     }
   `}
 `;

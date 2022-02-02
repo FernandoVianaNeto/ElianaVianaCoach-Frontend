@@ -33,5 +33,22 @@ export const ButtonContainer = styled.div`
     flex-direction: column;
     gap: 10px;
     color: ${theme.colors.primaryColor};
+
+    a {
+      color: ${theme.colors.primaryColor}
+    }
+
+    button {
+      font-size: 16px;
+      background-color: transparent;
+      color: ${theme.colors.primaryColor};
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 0px;
+    }
+
   `}
 `;
