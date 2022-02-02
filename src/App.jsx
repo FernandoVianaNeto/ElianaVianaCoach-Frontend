@@ -21,6 +21,7 @@ import { Management } from './pages/BackOffice/Management';
 import { EditText } from './pages/BackOffice/EditText';
 import { Clients } from './pages/BackOffice/Clients';
 import { Testimonys } from './pages/BackOffice/Testimonys';
+import { Orcamentos } from './pages/BackOffice/Orçamentos';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/blog/gerenciamento" element={<Management />} />
           <Route path="/blog/gerenciamento/clientes" element={<Clients />} />
           <Route path="/blog/gerenciamento/depoimentos" element={<Testimonys />} />
+          <Route path="/blog/gerenciamento/orcamentos" element={<Orcamentos />} />
           <Route path="/bloghome" element={<HomeBlog />} />
           <Route path="/blog/text" element={<IndividualText />} />
           <Route path="/blog/editartexto/:id" element={<EditText />} />

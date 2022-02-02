@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineUserAdd } from 'react-icons/ai';
+import { AiOutlineFileAdd } from 'react-icons/ai';
 import {
   Container, Section, Filter, Texts,
 } from './styles';
@@ -35,17 +35,17 @@ export function Testimonys() {
       <Section>
         <Filter>
           <a href="/blog/gerenciamento">Textos</a>
-          <a href="/blog/gerenciamento">Depoimentos</a>
+          <a href="/blog/gerenciamento/depoimentos">Depoimentos</a>
           <a href="/blog/gerenciamento">Pedidos de orçamento</a>
           <a href="/blog/gerenciamento/clientes">Clientes</a>
         </Filter>
         <Texts>
           <header>
-            <h1>Todos os clientes:</h1>
+            <h1>Todos os depoimentos:</h1>
             <ButtonLink>
-              Adicionar novo cliente
+              Adicionar novo depoimento
               {' '}
-              <AiOutlineUserAdd />
+              <AiOutlineFileAdd />
             </ButtonLink>
           </header>
 

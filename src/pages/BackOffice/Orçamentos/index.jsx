@@ -8,28 +8,25 @@ import urlConfig from '../../../baseURL.json';
 import api from '../../../api/api';
 
 import { ButtonLink } from '../../../components/ButtonLink';
-import { TextBlogComponent } from '../../../components/TextBlogComponent';
+import { TestimonyBackOfficeCard } from '../../../components/TestimonyBackOfficeCard';
 
-export function Management() {
-  const [texts, setTexts] = useState([]);
-  const [token, setToken] = useState('');
-
+export function Orcamentos() {
+  const [depoimentos, setDepoimentos] = useState([]);
   const { localStorage } = window;
 
   useEffect(() => {
     const tokenHash = JSON.parse(localStorage.getItem('token'));
+    api.defaults.headers.authorization = `Bearer ${tokenHash}`;
 
     if (!tokenHash) {
       window.location.href = `${urlConfig.frontendURL}/blog/login`;
-    } else {
-      setToken(tokenHash);
     }
   }, []);
 
   useEffect(() => {
-    api.get(`${urlConfig.baseURL}/blogtexts`)
+    api.get(`${urlConfig.baseURL}/depoimentos`)
       .then(async (response) => {
-        setTexts(response.data);
+        setDepoimentos(response.data);
       });
   }, []);
 
@@ -44,24 +41,23 @@ export function Management() {
         </Filter>
         <Texts>
           <header>
-            <h1>Todos os textos:</h1>
+            <h1>Todos os depoimentos:</h1>
             <ButtonLink>
-              Adicionar novo texto
+              Adicionar novo depoimento
               {' '}
               <AiOutlineFileAdd />
             </ButtonLink>
           </header>
 
           {
-            texts.map((text) => (
-              <TextBlogComponent
-                key={text.id}
-                title={text.title}
-                description={text.description}
-                date={text.date}
-                tags={text.tags}
-                id={text.id}
-                token={token}
+            depoimentos.map((depoimento) => (
+              <TestimonyBackOfficeCard
+                key={depoimento.id}
+                name={depoimento.name}
+                title={depoimento.title}
+                description={depoimento.description}
+                date={depoimento.date}
+                id={depoimento.id}
               />
             ))
           }
