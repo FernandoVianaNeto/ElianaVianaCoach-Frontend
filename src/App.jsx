@@ -18,10 +18,9 @@ import { HomeBlog } from './pages/Blog/HomeBlog';
 import { IndividualText } from './pages/Blog/IndividualText';
 import { Login } from './pages/BackOffice/Login';
 import { Management } from './pages/BackOffice/Management';
+import { EditText } from './pages/BackOffice/EditText';
 
 function App() {
-  // const { authenticated } = useContext(Context);
-  // console.log(authenticated);
   return (
     <AuthProvider>
       <BrowserRouter>
@@ -35,6 +34,7 @@ function App() {
           <Route path="/blog/gerenciamento" element={<Management />} />
           <Route path="/bloghome" element={<HomeBlog />} />
           <Route path="/blog/text" element={<IndividualText />} />
+          <Route path="/blog/editartexto/:id" element={<EditText />} />
           <Route path="/agradecimento" element={<ThankYouPage />} />
         </Routes>
       </BrowserRouter>

@@ -16,5 +16,19 @@ export const Form = styled.form`
         color: ${theme.colors.primaryColor};
       }
     }
+
+    h1 {
+      font-family: ${theme.font.family.titleFont};
+      color: ${theme.colors.fourthColor};
+    }
+
+    div {
+      width: 100%;
+
+      small {
+        font-family: ${theme.font.family.primaryFont};
+        color: ${theme.colors.fourthColor};
+      }
+    }
   `}
 `;

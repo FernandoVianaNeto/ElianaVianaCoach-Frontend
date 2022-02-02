@@ -4,6 +4,7 @@ import React from 'react';
 import P from 'prop-types';
 import { AiOutlineExpandAlt, AiOutlineEdit } from 'react-icons/ai';
 import { FiTrash } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { Container, ButtonContainer } from './styles';
 import api from '../../api/api';
 import urlConfig from '../../baseURL.json';
@@ -47,7 +48,7 @@ export function TextBlogComponent({
       <ButtonContainer>
         <AiOutlineExpandAlt />
         <button type="button" onClick={() => handleDeleteText()}><FiTrash /></button>
-        <AiOutlineEdit />
+        <Link to={`/blog/editartexto/${id}`}><AiOutlineEdit /></Link>
       </ButtonContainer>
     </Container>
   );

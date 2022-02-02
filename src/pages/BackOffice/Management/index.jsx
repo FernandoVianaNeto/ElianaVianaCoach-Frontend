@@ -14,6 +14,7 @@ export function Management() {
 
   useEffect(() => {
     const tokenHash = JSON.parse(localStorage.getItem('token'));
+
     if (!tokenHash) {
       window.location.href = `${urlConfig.frontendURL}/blog/login`;
     } else {
