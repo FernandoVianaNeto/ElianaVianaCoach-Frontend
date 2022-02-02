@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable quote-props */
 import React from 'react';
 import P from 'prop-types';
@@ -11,13 +12,14 @@ export function TextBlogComponent({
   title, description, date, tags, id,
 }) {
   function handleDeleteText() {
-    api.post(`/blog/deletetext/${id}`)
-      .then(() => {
-        window.location.href = `${urlConfig.frontendURL}/blog/gerenciamento`;
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    if (window.confirm('Você realmente deseja excluir esse texto?')) {
+      if (window.confirm('Lembre que essa é uma ação que não tem mais volta')) {
+        api.post(`/blog/deletetext/${id}`)
+          .then(() => {
+            window.location.href = `${urlConfig.frontendURL}/blog/gerenciamento`;
+          });
+      }
+    }
   }
 
   return (
