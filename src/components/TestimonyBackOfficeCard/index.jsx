@@ -9,15 +9,15 @@ import { Container, ButtonContainer } from './styles';
 import api from '../../api/api';
 import urlConfig from '../../baseURL.json';
 
-export function ClientsCard({
-  email, id, know, name, phone,
+export function TestimonyBackOfficeCard({
+  date, id, name, title, description,
 }) {
   function handleDeleteText() {
-    if (window.confirm('Você realmente deseja excluir esse c?')) {
+    if (window.confirm('Você realmente deseja excluir esse cliente?')) {
       if (window.confirm('Lembre que essa é uma ação que não tem mais volta')) {
-        api.post(`/deletarcliente/${id}`)
+        api.post(`/deletardepoimento/${id}`)
           .then(() => {
-            window.location.href = `${urlConfig.frontendURL}/blog/gerenciamento/clientes`;
+            window.location.href = `${urlConfig.frontendURL}/blog/gerenciamento/depoimentos`;
           });
       }
     }
@@ -31,19 +31,19 @@ export function ClientsCard({
         {name}
       </p>
       <p>
-        <span>E-mail:</span>
+        <span>Título:</span>
         {' '}
-        {email}
+        {title}
       </p>
       <p>
-        <span>Conheceu:</span>
+        <span>Descrição:</span>
         {' '}
-        {know}
+        {description}
       </p>
       <p>
-        <span>Telefone:</span>
+        <span>Data:</span>
         {' '}
-        {phone}
+        {date}
       </p>
       <ButtonContainer>
         <AiOutlineExpandAlt />
@@ -54,10 +54,10 @@ export function ClientsCard({
   );
 }
 
-ClientsCard.propTypes = {
-  phone: P.string.isRequired,
+TestimonyBackOfficeCard.propTypes = {
   name: P.string.isRequired,
-  know: P.string.isRequired,
-  email: P.string.isRequired,
+  title: P.string.isRequired,
+  description: P.string.isRequired,
+  date: P.string.isRequired,
   id: P.string.isRequired,
 };
