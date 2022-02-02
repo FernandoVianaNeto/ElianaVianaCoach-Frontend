@@ -19,6 +19,7 @@ import { IndividualText } from './pages/Blog/IndividualText';
 import { Login } from './pages/BackOffice/Login';
 import { Management } from './pages/BackOffice/Management';
 import { EditText } from './pages/BackOffice/EditText';
+import { Clients } from './pages/BackOffice/Clients';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/maissobremim" element={<AboutMe />} />
           <Route path="/blog/login" element={<Login />} />
           <Route path="/blog/gerenciamento" element={<Management />} />
+          <Route path="/blog/gerenciamento/clientes" element={<Clients />} />
           <Route path="/bloghome" element={<HomeBlog />} />
           <Route path="/blog/text" element={<IndividualText />} />
           <Route path="/blog/editartexto/:id" element={<EditText />} />

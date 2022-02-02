@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineFileAdd } from 'react-icons/ai';
+import { AiOutlineUserAdd } from 'react-icons/ai';
 import {
   Container, Section, Filter, Texts,
 } from './styles';
@@ -8,28 +8,24 @@ import urlConfig from '../../../baseURL.json';
 import api from '../../../api/api';
 
 import { ButtonLink } from '../../../components/ButtonLink';
-import { TextBlogComponent } from '../../../components/TextBlogComponent';
+import { ClientsCard } from '../../../components/ClientsCard';
 
-export function Management() {
-  const [texts, setTexts] = useState([]);
-  const [token, setToken] = useState('');
-
+export function Clients() {
+  const [clientes, setClientes] = useState([]);
   const { localStorage } = window;
 
   useEffect(() => {
     const tokenHash = JSON.parse(localStorage.getItem('token'));
-
+    api.defaults.headers.authorization = `Bearer ${tokenHash}`;
     if (!tokenHash) {
       window.location.href = `${urlConfig.frontendURL}/blog/login`;
-    } else {
-      setToken(tokenHash);
     }
   }, []);
 
   useEffect(() => {
-    api.get(`${urlConfig.baseURL}/blogtexts`)
+    api.get(`${urlConfig.baseURL}/clientes`)
       .then(async (response) => {
-        setTexts(response.data);
+        setClientes(response.data);
       });
   }, []);
 
@@ -40,28 +36,27 @@ export function Management() {
           <a href="/blog/gerenciamento">Textos</a>
           <a href="/blog/gerenciamento">Depoimentos</a>
           <a href="/blog/gerenciamento">Pedidos de orçamento</a>
-          <a href="/blog/gerenciamento/clientes">Clientes</a>
+          <a href="/blog/gerenciamento">Clientes</a>
         </Filter>
         <Texts>
           <header>
-            <h1>Todos os textos:</h1>
+            <h1>Todos os clientes:</h1>
             <ButtonLink>
-              Adicionar novo texto
+              Adicionar novo cliente
               {' '}
-              <AiOutlineFileAdd />
+              <AiOutlineUserAdd />
             </ButtonLink>
           </header>
 
           {
-            texts.map((text) => (
-              <TextBlogComponent
-                key={text.id}
-                title={text.title}
-                description={text.description}
-                date={text.date}
-                tags={text.tags}
-                id={text.id}
-                token={token}
+            clientes.map((client) => (
+              <ClientsCard
+                key={client.id}
+                name={client.name}
+                email={client.email}
+                know={client.know}
+                phone={client.phone}
+                id={client.id}
               />
             ))
           }

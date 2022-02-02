@@ -9,15 +9,15 @@ import { Container, ButtonContainer } from './styles';
 import api from '../../api/api';
 import urlConfig from '../../baseURL.json';
 
-export function TextBlogComponent({
-  title, description, date, tags, id,
+export function ClientsCard({
+  email, id, know, name, phone,
 }) {
   function handleDeleteText() {
-    if (window.confirm('Você realmente deseja excluir esse texto?')) {
+    if (window.confirm('Você realmente deseja excluir esse cliente?')) {
       if (window.confirm('Lembre que essa é uma ação que não tem mais volta')) {
-        api.post(`/blog/deletetext/${id}`)
+        api.post(`/deletarcliente/${id}`)
           .then(() => {
-            window.location.href = `${urlConfig.frontendURL}/blog/gerenciamento`;
+            window.location.href = `${urlConfig.frontendURL}/blog/gerenciamento/clientes`;
           });
       }
     }
@@ -26,43 +26,38 @@ export function TextBlogComponent({
   return (
     <Container>
       <p>
-        <span>Título:</span>
+        <span>Nome:</span>
         {' '}
-        {title}
+        {name}
       </p>
       <p>
-        <span>Texto:</span>
+        <span>E-mail:</span>
         {' '}
-        {description}
+        {email}
       </p>
       <p>
-        <span>Data:</span>
+        <span>Conheceu:</span>
         {' '}
-        {date}
+        {know}
       </p>
       <p>
-        <span>Tag:</span>
+        <span>Telefone:</span>
         {' '}
-        {tags}
+        {phone}
       </p>
       <ButtonContainer>
         <AiOutlineExpandAlt />
         <button type="button" onClick={() => handleDeleteText()}><FiTrash /></button>
-        <Link to={`/blog/editartexto/${id}`}><AiOutlineEdit /></Link>
+        <Link to={`/blog/editarcliente/${id}`}><AiOutlineEdit /></Link>
       </ButtonContainer>
     </Container>
   );
 }
 
-TextBlogComponent.propTypes = {
-  title: P.string.isRequired,
-  date: P.string.isRequired,
-  description: P.string.isRequired,
+ClientsCard.propTypes = {
+  phone: P.string.isRequired,
+  name: P.string.isRequired,
+  know: P.string.isRequired,
+  email: P.string.isRequired,
   id: P.string.isRequired,
-
-  tags: P.string,
-};
-
-TextBlogComponent.defaultProps = {
-  tags: 'Coach',
 };
