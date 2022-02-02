@@ -59,6 +59,10 @@ export const Filter = styled.div`
 
 export const Texts = styled.div`
   ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
     padding: 30px;
     height: 100vh;
 

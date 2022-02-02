@@ -1,21 +1,30 @@
 import React, { useState, useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
 import {
   Container, Section, Filter, Texts,
 } from './styles';
-import url from '../../../baseURL.json';
+import urlConfig from '../../../baseURL.json';
 import { TextBlogComponent } from '../../../components/TextBlogComponent';
+import api from '../../../api/api';
 
 export function Management() {
   const [texts, setTexts] = useState([]);
-  // const { token } = useParams();
-  // console.log(token);
+  const [token, setToken] = useState('');
+
+  const { localStorage } = window;
 
   useEffect(() => {
-    fetch(`${url.baseURL}/blogtexts`)
+    const tokenHash = JSON.parse(localStorage.getItem('token'));
+    if (!tokenHash) {
+      window.location.href = `${urlConfig.frontendURL}/blog/login`;
+    } else {
+      setToken(tokenHash);
+    }
+  }, []);
+
+  useEffect(() => {
+    api.get(`${urlConfig.baseURL}/blogtexts`)
       .then(async (response) => {
-        const json = await response.json();
-        setTexts(json);
+        setTexts(response.data);
       });
   }, []);
 
@@ -38,6 +47,7 @@ export function Management() {
                 date={text.date}
                 tags={text.tags}
                 id={text.id}
+                token={token}
               />
             ))
           }
