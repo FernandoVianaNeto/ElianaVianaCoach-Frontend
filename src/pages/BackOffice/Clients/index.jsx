@@ -17,6 +17,7 @@ export function Clients() {
   useEffect(() => {
     const tokenHash = JSON.parse(localStorage.getItem('token'));
     api.defaults.headers.authorization = `Bearer ${tokenHash}`;
+
     if (!tokenHash) {
       window.location.href = `${urlConfig.frontendURL}/blog/login`;
     }
