@@ -37,7 +37,7 @@ export const Container = styled.div`
 
       .button-container {
         margin-top: 50px;
-
+        max-width: 200px;
         text-align: right;
       }
     }

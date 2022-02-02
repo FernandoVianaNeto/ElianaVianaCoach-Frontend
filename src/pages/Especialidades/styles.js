@@ -48,7 +48,6 @@ export const FirstView = styled.div`
 
     .description {
       display: flex;
-      align-items: center;
       justify-content: center;
       gap: 30px;
       margin: 70px;
