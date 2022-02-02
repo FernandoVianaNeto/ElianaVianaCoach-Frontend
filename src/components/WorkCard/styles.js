@@ -7,10 +7,24 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+    }
+
     img {
       width: 400px;
       height: 270px;
       border-radius: 4px;
+    }
+
+    .description-p {
+      height: 150px;
+      display: flex;
+      justify-content: flex-start;
+      text-align: justify;
     }
 
     p {
@@ -18,12 +32,15 @@ export const Container = styled.div`
       font-family: ${theme.font.family.primaryFont};
       text-align: center;
       max-width: 400px;
-      margin: 30px 0px;
     }
 
     .description-title {
       font-weight: bold;
       font-size: 18px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     @media ${theme.media.lteMedium} {

@@ -23,7 +23,7 @@ export const Container = styled.div`
 
 export const FirstView = styled.main`
   ${({ theme }) => css`
-    min-height: 80vh;
+    height: 80vh;
     max-width: 1500px;
     margin: 0 auto;
 
@@ -96,12 +96,12 @@ export const AboutMe = styled.div`
 
     .subpage-introduction {
       padding: 10px 30px;
-      background-color: ${theme.colors.fifthColor};
+      background-color: ${theme.colors.fourthColor};
     }
 
     .title {
       font-size: 60px;
-      color: ${theme.colors.fourthColor};
+      color: ${theme.colors.secundaryColor};
       font-family: ${theme.font.family.titleFont};
       transform: rotate(-2deg);
     }
@@ -273,6 +273,7 @@ export const ThreeGridTemplate = styled.div`
         font-family: ${theme.font.family.primaryFont};
         color: ${theme.colors.fifthColor};
         text-align: justify;
+        font-size: 22px;
       }
 
       h1 {
@@ -308,7 +309,7 @@ export const EspecialidadesGrid = styled.div`
     max-width: 1500px;
     margin: 0 auto;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     height: 100%;

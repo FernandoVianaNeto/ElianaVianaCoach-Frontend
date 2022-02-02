@@ -12,7 +12,7 @@ export function WorkCard({
       </div>
       <div className="description">
         <p className="description-title">{title}</p>
-        {children}
+        <p className="description-p">{children}</p>
       </div>
     </Container>
   );

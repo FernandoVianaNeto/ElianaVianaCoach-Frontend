@@ -89,12 +89,13 @@ export function Home() {
           <div className="description-grid">
             <h1>Quem é Eliana?</h1>
             <p>
-              Mulher, empreendedora, graduada em Administração, MBA em Liderança e Coach ,
+              Quando sinto que tudo vai desabar decido gargalhar e não chorar, sempre vou, sempre luto! Exemplo disso foi derrotar um gigante chamado câncer que tentou me derrubar e venci através da minha fé. Simplesmente eu vivo procurando olhar o lado positivo do que me desagrada, do que não deu certo.    Sou sincera, resiliente, gosto do olho no olho, amo minha família, sou um ser em construção, cheia de sonhos e amor no coração. Sou moderna, adoro música, amo o cheiro da chuva quando cai no chão... Pode me chamar de Eli! Essa sou eu!!!
+              {/* Mulher, empreendedora, graduada em Administração, MBA em Liderança e Coach ,
               25 anos de experiência em liderança, desenvolvimento
               humano, gestão de pessoas.
               Me proponho a ajudar você a mergulhar no autoconhecimento,
               entendendo seus limites, ganhando autoconfiança,
-              aprendendo com os erros e alavancando sua vida e carreira.
+              aprendendo com os erros e alavancando sua vida e carreira. */}
             </p>
             <ButtonLink href="/maissobremim">SAIBA MAIS SOBRE MIM</ButtonLink>
           </div>
@@ -104,34 +105,15 @@ export function Home() {
         <h1 className="title">Como é o meu trabalho?</h1>
         <EspecialidadesGrid>
           <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1641778571/home-office_umo8ut.jpg" imgalt="work" title="Orientação Profissional">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat. Ut wisi enim ad minim veniam,
-              quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-              aliquip ex ea commodo.
-              {' '}
-            </p>
+            Através das ferramentas aplicadas nas sessões, desenvolvo um processo de aceleração de resultados, de forma planejada e assertiva. A evolução é de forma sistêmica, uma vez que o método traz reflexões poderosas podendo ser aplicado de forma generalizado para o aumento do bem estar e equilíbrio. Quem passa por esse processo consegue ver um resultado exponencial sobre seu desenvolvimento profissional e pessoal.
           </WorkCard>
           <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643057242/pexels-alex-green-5699482_nf87zj.jpg" imgalt="work" title="Psicanálise">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt
-              ut laoreet dolore magna aliquam erat volutpat.
-              Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex
-              ea commodo.
-              {' '}
-            </p>
+            As terapias são feitas num ambiente acolhedor onde o cliente/paciente se sente muito confortável para trazer suas dores e seus amores, livre de culpa ou julgamento. Utilizo a Psicanálise para descobrir traumas da infância, depressão, transtorno de ansiedade, burnout, feridas emocionais entre outras questões internas e externas.
           </WorkCard>
           <WorkCard imglink="https://res.cloudinary.com/dh84pxwgu/image/upload/v1643057056/scott-graham-5fNmWej4tAA-unsplash_sczbax.jpg" imgalt="work" title="Coaching">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-              magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-              quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-              ut aliquip ex ea commodo.
-            </p>
+
+            Utilizo o Coaching que é uma metodologia de desenvolvimento humano, fazendo com que o cliente tenha clareza em relação ao que se deseja, ressignificando suas crenças limitantes, melhorando a autoconfiança, desenvolvendo a sua inteligência emocional. Através das ferramentas aplicadas nas sessões, desenvolvo um processo de aceleração de resultados, de forma planejada e assertiva.
+
           </WorkCard>
         </EspecialidadesGrid>
         <div className="footer"><ButtonLink href="/especialidades">SAIBA MAIS</ButtonLink></div>
